@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Engineering system</title>
+  <link href="fonts.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+<header class="header main__header">
+  <div class="header-navigation">
+    <div class="header__contact">
+      <p class="main-text">
+        Logo или/и название
+      </p>
+      <div class="phone">
+        <img src="./image/icons/phone.svg" alt="phone">
+        <a class="phone-number" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
+      </div>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
+        <li>
+          <label for="nav-serv" class="navigation__link">Услуги</label>
+          <input type="checkbox" id="nav-serv"/>
+          <ul class="navigation-sublist">
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
+            <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
+          </ul>
+        </li>
+        <li><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
+        <li><a class="navigation__link" href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__content">
+    <h2 class="title header__title">Безопасность и качество</h2>
+    <p class="header__text">Наш приоритет в каждом строительном проекте! Получите бесплатную консультацию нашего
+      эксперта!</p>
+    <button class="button header__button">Связаться</button>
+  </div>
+
+</header>
+
+<main class="main">
+
+  <section class="section">
+    <div>
+      <div class="block-cards counter">
+        <div class="counter-block customers">
+          <span class="counter-number">1000</span>
+          <span class="counter-text">Заказчиков</span>
+        </div>
+        <div class="counter-block objects">
+          <span class="counter-number">1000</span>
+          <span class="counter-text">Введенных в эксплуатацию объектов</span>
+        </div>
+        <div class="counter-block years">
+          <span class="counter-number">1000</span>
+          <span class="counter-text">Лет на рынке</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-services">
+    <h2 class="title section__title">Услуги</h2>
+    <p class="section__text">Тут написать что-то пояснительное и притягивающее внимание</p>
+    <div class="block-cards">
+      <div class="services__card services-card">
+        <div class="card__inform">
+          <h4 class="card__title">Инженерные услуги</h4>
+          <p class="card__text">Тут должно быть краткое описание услуги. Что она из себя предтавляет в широком
+            смысле.</p>
+        </div>
+        <button class="button header__button card__button">Подробнее</button>
+      </div>
+      <div class="services__card supervision-card">
+        <div class="card__inform">
+          <h4 class="card__title">Технический надзор</h4>
+          <p class="card__text">Тут должно быть краткое описание услуги.
+            Что она из себя предтавляет в широком смысле.</p>
+        </div>
+        <button class="button header__button card__button">Подробнее</button>
+      </div>
+      <div class="services__card laboratory-card">
+        <div class="card__inform">
+          <h4 class="card__title">Испытательная лаборатория</h4>
+          <p class="card__text">Тут должно быть краткое описание услуги.
+            Что она из себя предтавляет в широком смысле.</p>
+        </div>
+        <button class="button header__button card__button">Подробнее</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="title-block">
+      <h2 class="title section__title">Наши объекты</h2>
+      <div class="block-buttons">
+        <button class="button button-slider button__back">
+          <img src="image/icons/arrow_back.svg" alt="next">
+        </button>
+        <button class="button button-slider button__next">
+          Дальше
+          <img src="image/icons/arrow_next.svg" alt="next">
+        </button>
+      </div>
+    </div>
+    <div class="slider-content">
+      <div class="slider-object">
+        <div class="block-photo block-photo1">
+          <span class="photo photo1"></span>
+        </div>
+        <div class="block-photo block-photo2">
+          <span class="photo photo2"></span>
+        </div>
+        <div class="block-photo block-photo3">
+          <span class="photo photo3"></span>
+        </div>
+      </div>
+      <div class="block-page">
+        <span class="line"></span>
+        <div class="slider-page">
+          <span class="page">1</span>
+          <span class="page page_active">2</span>
+          <span class="page">3</span>
+          <span class="page">4</span>
+        </div>
+      </div>
+    </div>
+    <button class="button button-dark slider-object__button">Все наши объекты</button>
+  </section>
+
+  <section class="section section__review">
+    <div class="title-block">
+      <h2 class="title section__title">Отзывы</h2>
+      <div class="block-buttons">
+        <button class="button button-slider button__back"><img src="image/icons/arrow_back.svg" alt="next"></button>
+        <button class="button button-slider button__next">Дальше <img src="image/icons/arrow_next.svg" alt="next">
+        </button>
+      </div>
+    </div>
+    <p class="section__text review__text">Небольшое предисловие о том какие мы крутые, а наши клиенты довольные</p>
+    <div class="slider-content slider-content__review">
+      <div class="slider-review">
+        <div class="block-review">
+          <img class="quotes" src="./image/icons/“.svg" alt="">
+          <h4 class="review-author">От кого отзыв</h4>
+          <p class="review review__text">
+            Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
+            выглядеть примерно вот примерно так, смотри
+          </p>
+          <button class="button button-slider button__review">открыть фото</button>
+        </div>
+        <div class="block-review">
+          <img class="quotes" src="./image/icons/“.svg" alt="">
+          <h4 class="review-author">От кого отзыв</h4>
+          <p class="review">
+            Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
+            выглядеть примерно вот примерно так, смотри
+          </p>
+          <button class="button button-slider button__review">открыть фото</button>
+        </div>
+      </div>
+      <div class="block-page">
+        <span class="line"></span>
+        <div class="slider-page">
+          <span class="page page_active">1</span>
+          <span class="page">2</span>
+          <span class="page">3</span>
+          <span class="page">4</span>
+        </div>
+      </div>
+    </div>
+    <div class="our-customers__block">
+      <div class="our-customers__wrapper"></div>
+      <div class="our-customers">
+        <h6 class="our-customers__title">Наши клиенты:</h6>
+      </div>
+      <p class="main-text review__logo">Лого</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div>
+      <h2 class="title section__title main__aboutUs-title">Мы - Инжиниринговая компания</h2>
+      <p class="main__aboutUs-owner">ИП Курачко И.И.</p>
+    </div>
+    <p class="section__text main__aboutUs-text">Оказание инженерных услуг по комплексному управлению строительной
+      деятельностью, технический
+      надзор, услуги испытательной лаборатории.</p>
+    <div class="main__aboutUs-content">
+      <div class="block-cards main__aboutUs-cards">
+        <div class="counter-block customers">
+          <img class="main__aboutUs-icon" src="./image/icons/point_map.svg" alt="icon">
+          <span class="counter-number">Приходите</span>
+          <span class="counter-text">Мы находимся в Гродно</span>
+        </div>
+        <div class="counter-block objects">
+          <img class="main__aboutUs-icon" src="./image/icons/letter.svg" alt="icon">
+          <span class="counter-number">Пишите</span>
+          <span class="counter-text">Мы всегда на связи</span>
+        </div>
+        <div class="counter-block years">
+          <img class="main__aboutUs-icon" src="./image/icons/phone_icon.svg" alt="icon">
+          <span class="counter-number">Звоните</span>
+          <span class="counter-text">Мы всегда поможем нашим клиентам</span>
+        </div>
+      </div>
+      <div class="main__aboutUs-wrapper"></div>
+      <div class="main__aboutUs">
+        <p class="main__aboutUs-inform">
+          Написать что-то о качестве и надежности, возможно о лаборатории
+        </p>
+        <p class="main__aboutUs-contact">
+          Чтобы связаться с нами, можно заполнить обратную форму связи на сайте или обратиться по указанным
+          контактам.
+        </p>
+      </div>
+      <div class="subpage-buttons">
+        <button class="button button-dark">Испытательная Лаборатория</button>
+        <button class="button button-slider subpage-button-contact">Контакты</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__content">
+
+    <div class="footer__block">
+      <p class="main-text">logo/название</p>
+      <div>
+        <div>
+          <p class="footer__subtitle">Юридический адрес:
+            <span class="footer__subtext">230018,</span>
+            <span class="footer__text">г. Гродно, ул. Огинского, 26-64;
+          </span>
+          </p>
+        </div>
+        <div>
+          <p class="footer__subtitle">Почтовый адрес:
+            <span class="footer__subtext"> 230005, </span>
+            <span class="footer__text">г.Гродно, ул. Курчатова 24-77,</span>
+            <span class="footer__subtext"> УНП591932217</span>
+          </p>
+        </div>
+        <div>
+          <p class="footer__subtitle">Р/с:
+            <span class="footer__subtext"> BY05BPSB30133152010149330000</span>
+          </p>
+        </div>
+        <div>
+          <p class="footer__subtitle">БИК:
+            <span class="footer__subtext"> BPSBBY2X ОАО «СБЕР БАНК»</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__block">
+      <p class="main-text">Контактная информация</p>
+      <div>
+        <a class="footer-link footer-link__contact" href="tel:8(029) 887-10-94">
+          <img src="./image/icons/phone.svg" alt="phone">
+          <p>8(029) 887-10-94</p>
+        </a>
+        <a class="footer-link footer-link__contact" href="mailto:iwan.kurachko@gmail.com">
+          <img src="./image/icons/letter.svg" alt="letter">
+          <p>iwan.kurachko@gmail.com</p>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer__block footer-navigation">
+      <p class="main-text">навигация</p>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__li"><a class="footer-link" href="">главная</a></li>
+        <li class="footer-navigation__li"><a class="footer-link" href="">о нас</a></li>
+        <li class="footer-navigation__li"><a class="footer-link" href="">виды работ</a></li>
+        <ul class="footer-navigation__list">
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./supervision.html">Технический надзор</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
+        </ul>
+        <li class="footer-navigation__li"><a class="footer-link" href="">наши объекты</a></li>
+        <li class="footer-navigation__li"><a class="footer-link" href="">контакты</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  <div class="developer">
+    <span class="developer-text">Made by</span>
+    <a class="developer-link" href="">The Lessoner</a>
+  </div>
+</footer>
+</body>
+</html>

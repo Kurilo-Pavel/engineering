@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты</title>
+  <link href="fonts.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<header class="header contacts__header">
+  <div class="header-navigation">
+    <div class="header__contact">
+      <p class="main-text">
+        Logo или/и название
+      </p>
+      <div class="phone">
+        <img src="./image/icons/phone.svg" alt="phone">
+        <a class="phone-number" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
+      </div>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
+        <li>
+          <label for="nav-serv" class="navigation__link">Услуги</label>
+          <input type="checkbox" id="nav-serv"/>
+          <ul class="navigation-sublist">
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
+            <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
+          </ul>
+        </li>
+        <li><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
+        <li><a class="navigation__link" href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__block-title">
+    <p class="main-link"><a class="main-link" href="./">Главная </a>/ Контакты</p>
+    <h1 class="title header__title">Контакты</h1>
+  </div>
+</header>
+
+<main class="main contacts">
+<section class="section">
+  <h2 class="title subpage-title">Связаться с нами</h2>
+  <p class="subpage-text">
+    Не стесняйтесь обращаться к нам в любое время. Мы свяжемся с вами, как только сможем!
+  </p>
+  <div class="contact-content">
+    <form class="contact-form" action="">
+      <label for="">
+        <input class="contact-field contact-input" type="text" placeholder="Имя*">
+      </label>
+      <label for="">
+        <input class="contact-field contact-input" type="text" placeholder="E-mail*">
+      </label>
+      <label for="">
+        <input class="contact-field contact-input" type="text" placeholder="Телефон">
+      </label>
+      <textarea class="contact-field contact-textarea" name="" id="" cols="30" rows="10" placeholder="Введите текст*"></textarea>
+    </form>
+    <div class="contacts-data">
+      <h4 class="contacts-title">Информация:</h4>
+      <a class="footer-link contact-link" href="tel:8(029) 887-10-94">
+        <img src="./image/icons/phone_blue.png" alt="phone">
+        <p>8(029) 887-10-94</p>
+      </a>
+      <a class="footer-link contact-link" href="mailto:iwan.kurachko@gmail.com">
+        <img src="./image/icons/letter_blue.png" alt="letter">
+        <p>iwan.kurachko@gmail.com</p>
+      </a>
+      <p class="footer-link contact-link contact-address">
+        <img src="./image/icons/point_map_blue.png" alt="map">
+        г. Гродно, ул.Курчатова 24-77
+      </p>
+      <p class="footer-link contact-link">
+        <img src="./image/icons/time_blue.png" alt="time">
+        08:00 - 17:00
+      </p>
+    </div>
+  </div>
+  <div>
+    <div class="contact-block">
+      <label for="">
+        <input class="contact-radio" type="radio">
+        Юр. лицо
+      </label>
+      <label for="">
+        <input class="contact-radio" type="radio">
+        Физ. лицо
+      </label>
+    </div>
+    <button class="button button-dark">Отправить</button>
+  </div>
+</section>
+
+<section class="contact-map">
+  <h2 class="title">Карта</h2>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__block">
+      <p class="main-text">logo/название</p>
+      <div>
+        <div>
+          <p class="footer__subtitle">Юридический адрес:
+            <span class="footer__subtext">230018,</span>
+            <span class="footer__text">г. Гродно, ул. Огинского, 26-64;
+          </span>
+          </p>
+        </div>
+        <div>
+          <p class="footer__subtitle">Почтовый адрес:
+            <span class="footer__subtext"> 230005, </span>
+            <span class="footer__text">г.Гродно, ул. Курчатова 24-77,</span>
+            <span class="footer__subtext"> УНП591932217</span>
+          </p>
+        </div>
+        <div>
+          <p class="footer__subtitle">Р/с:
+            <span class="footer__subtext"> BY05BPSB30133152010149330000</span>
+          </p>
+        </div>
+        <div>
+          <p class="footer__subtitle">БИК:
+            <span class="footer__subtext"> BPSBBY2X ОАО «СБЕР БАНК»</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__block">
+      <p class="main-text">Контактная информация</p>
+      <div>
+        <a class="footer-link footer-link__contact" href="tel:8(029) 887-10-94">
+          <img src="./image/icons/phone.svg" alt="phone">
+          <p>8(029) 887-10-94</p>
+        </a>
+        <a class="footer-link footer-link__contact" href="mailto:iwan.kurachko@gmail.com">
+          <img src="./image/icons/letter.svg" alt="letter">
+          <p>iwan.kurachko@gmail.com</p>
+        </a>
+      </div>
+    </div>
+    <nav class="footer__block footer-navigation">
+      <p class="main-text">навигация</p>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__li"><a class="footer-link" href="">главная</a></li>
+        <li class="footer-navigation__li"><a class="footer-link" href="">о нас</a></li>
+        <li class="footer-navigation__li"><a class="footer-link" href="">виды работ</a></li>
+        <ul class="footer-navigation__list">
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="">Оказание инженерных услуг</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="">Технический надзор</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="">Испытательная лаборатория</a></li>
+        </ul>
+        <li class="footer-navigation__li"><a class="footer-link" href="">наши объекты</a></li>
+        <li class="footer-navigation__li"><a class="footer-link" href="">контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="developer">
+    <span class="developer-text">Made by</span>
+    <a class="developer-link" href="">The Lessoner</a>
+  </div>
+</footer>
+</body>
+</html>
