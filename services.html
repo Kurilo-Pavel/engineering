@@ -20,18 +20,18 @@
     </div>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
-        <li>
-          <label for="nav-serv" class="navigation__link">Услуги</label>
-          <input type="checkbox" id="nav-serv"/>
+        <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li">
+          <a href="./services.html" class="navigation__link">Услуги</a>
           <ul class="navigation-sublist">
-            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
+            </li>
             <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
         </li>
-        <li><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
-        <li><a class="navigation__link" href="./contacts.html">Контакты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </div>
@@ -62,6 +62,17 @@
     <img class="services-photo-2" src="./image/services_56.png" alt="image">
 
     <div class="services-block services-block-2">
+      <h4 class="subpage-text">Технический надзор</h4>
+      <ul>
+        <li class="services-block_li">Общестроительные работы;</li>
+        <li class="services-block_li">Работы в области водоснабжения и канализации;</li>
+        <li class="services-block_li">Работы по монтажу внутренних сетей теплоснабжения, вентиляции и кондиционирования
+          воздуха;</li>
+        <li class="services-block_li">Работы по монтажу наружных сетей теплоснабжения;</li>
+        <li class="services-block_li">Работы в области электроснабжения и автоматизации;</li>
+        <li class="services-block_li">Работы по монтажу технологических трубопроводов.</li>
+      </ul>
+      <button class="button button-service">подробнее</button>
     </div>
 
     <div class="services-block services-block-3">
@@ -69,7 +80,9 @@
       <ul>
         <li class="services-block_li">Метод ударного импульса;</li>
         <li class="services-block_li">Метод отрыва со скалыванием;</li>
-        <li class="services-block_li">При устройстве тепловой изоляции наружных ограждающих кон-струкций зданий и сооружений и др;</li>
+        <li class="services-block_li">При устройстве тепловой изоляции наружных ограждающих кон-струкций зданий и
+          сооружений и др;
+        </li>
         <li class="services-block_li">Коэффициент уплотнения.</li>
       </ul>
       <button class="button button-service">подробнее</button>
@@ -142,15 +155,22 @@
         <li class="footer-navigation__li"><a class="footer-link" href="./aboutUs.html">о нас</a></li>
         <li class="footer-navigation__li"><a class="footer-link" href="./services.html">виды работ</a></li>
         <ul class="footer-navigation__list">
-          <li class="footer-navigation__subli"><a class="footer-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
-          <li class="footer-navigation__subli"><a class="footer-sublink" href="./supervision.html">Технический надзор</a></li>
-          <li class="footer-navigation__subli"><a class="footer-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./engineering_services.html">Оказание
+            инженерных услуг</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./supervision.html">Технический
+            надзор</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./laboratory.html">Испытательная
+            лаборатория</a></li>
         </ul>
         <li class="footer-navigation__li"><a class="footer-link" href="./ourObjects.html">наши объекты</a></li>
         <li class="footer-navigation__li"><a class="footer-link" href="./contacts.html">контакты</a></li>
       </ul>
     </nav>
   </div>
+  <span class="footer-arrow" onclick="scrollStart()">
+    <span class="footer-arrow__line"></span>
+    <img class="footer-arrow__img" src="./image/icons/arrow.svg" alt="Вверх">
+  </span>
   <div class="developer">
     <span class="developer-text">Made by</span>
     <a class="developer-link" href="">The Lessoner</a>

@@ -20,18 +20,17 @@
     </div>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
-        <li>
-          <label for="nav-serv" class="navigation__link">Услуги</label>
-          <input type="checkbox" id="nav-serv"/>
+        <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li">
+          <a href="./services.html" class="navigation__link">Услуги</a>
           <ul class="navigation-sublist">
             <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
             <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
         </li>
-        <li><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
-        <li><a class="navigation__link" href="./contacts.html">Контакты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </div>
@@ -189,6 +188,10 @@
       </ul>
     </nav>
   </div>
+  <span class="footer-arrow" onclick="scrollStart()">
+    <span class="footer-arrow__line"></span>
+    <img class="footer-arrow__img" src="./image/icons/arrow.svg" alt="Вверх">
+  </span>
   <div class="developer">
     <span class="developer-text">Made by</span>
     <a class="developer-link" href="">The Lessoner</a>

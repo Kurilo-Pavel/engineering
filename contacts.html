@@ -20,18 +20,18 @@
     </div>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
-        <li>
-          <label for="nav-serv" class="navigation__link">Услуги</label>
-          <input type="checkbox" id="nav-serv"/>
+        <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li">
+          <a href="./services.html" class="navigation__link">Услуги</a>
           <ul class="navigation-sublist">
-            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
+            </li>
             <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
         </li>
-        <li><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
-        <li><a class="navigation__link" href="./contacts.html">Контакты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </div>
@@ -42,62 +42,63 @@
 </header>
 
 <main class="main contacts">
-<section class="section">
-  <h2 class="title subpage-title">Связаться с нами</h2>
-  <p class="subpage-text">
-    Не стесняйтесь обращаться к нам в любое время. Мы свяжемся с вами, как только сможем!
-  </p>
-  <div class="contact-content">
-    <form class="contact-form" action="">
-      <label for="">
-        <input class="contact-field contact-input" type="text" placeholder="Имя*">
-      </label>
-      <label for="">
-        <input class="contact-field contact-input" type="text" placeholder="E-mail*">
-      </label>
-      <label for="">
-        <input class="contact-field contact-input" type="text" placeholder="Телефон">
-      </label>
-      <textarea class="contact-field contact-textarea" name="" id="" cols="30" rows="10" placeholder="Введите текст*"></textarea>
-    </form>
-    <div class="contacts-data">
-      <h4 class="contacts-title">Информация:</h4>
-      <a class="footer-link contact-link" href="tel:8(029) 887-10-94">
-        <img src="./image/icons/phone_blue.png" alt="phone">
-        <p>8(029) 887-10-94</p>
-      </a>
-      <a class="footer-link contact-link" href="mailto:iwan.kurachko@gmail.com">
-        <img src="./image/icons/letter_blue.png" alt="letter">
-        <p>iwan.kurachko@gmail.com</p>
-      </a>
-      <p class="footer-link contact-link contact-address">
-        <img src="./image/icons/point_map_blue.png" alt="map">
-        г. Гродно, ул.Курчатова 24-77
-      </p>
-      <p class="footer-link contact-link">
-        <img src="./image/icons/time_blue.png" alt="time">
-        08:00 - 17:00
-      </p>
+  <section class="section">
+    <h2 class="title subpage-title">Связаться с нами</h2>
+    <p class="subpage-text">
+      Не стесняйтесь обращаться к нам в любое время. Мы свяжемся с вами, как только сможем!
+    </p>
+    <div class="contact-content">
+      <form class="contact-form" action="">
+        <label for="">
+          <input class="contact-field contact-input" type="text" placeholder="Имя*">
+        </label>
+        <label for="">
+          <input class="contact-field contact-input" type="text" placeholder="E-mail*">
+        </label>
+        <label for="">
+          <input class="contact-field contact-input" type="text" placeholder="Телефон">
+        </label>
+        <textarea class="contact-field contact-textarea" name="" id="" cols="30" rows="10"
+                  placeholder="Введите текст*"></textarea>
+      </form>
+      <div class="contacts-data">
+        <h4 class="contacts-title">Информация:</h4>
+        <a class="footer-link contact-link" href="tel:8(029) 887-10-94">
+          <img src="./image/icons/phone_blue.png" alt="phone">
+          <p>8(029) 887-10-94</p>
+        </a>
+        <a class="footer-link contact-link" href="mailto:iwan.kurachko@gmail.com">
+          <img src="./image/icons/letter_blue.png" alt="letter">
+          <p>iwan.kurachko@gmail.com</p>
+        </a>
+        <p class="footer-link contact-link contact-address">
+          <img src="./image/icons/point_map_blue.png" alt="map">
+          г. Гродно, ул.Курчатова 24-77
+        </p>
+        <p class="footer-link contact-link">
+          <img src="./image/icons/time_blue.png" alt="time">
+          08:00 - 17:00
+        </p>
+      </div>
     </div>
-  </div>
-  <div>
-    <div class="contact-block">
-      <label for="">
-        <input class="contact-radio" type="radio">
-        Юр. лицо
-      </label>
-      <label for="">
-        <input class="contact-radio" type="radio">
-        Физ. лицо
-      </label>
+    <div>
+      <div class="contact-block">
+        <label for="">
+          <input class="contact-radio" type="radio" name="user">
+          Юр. лицо
+        </label>
+        <label for="">
+          <input class="contact-radio" type="radio" name="user">
+          Физ. лицо
+        </label>
+      </div>
+      <button class="button button-dark">Отправить</button>
     </div>
-    <button class="button button-dark">Отправить</button>
-  </div>
-</section>
+  </section>
 
-<section class="contact-map">
-  <h2 class="title">Карта</h2>
-</section>
+  <section class="contact-map">
+    <h2 class="title">Карта</h2>
+  </section>
 </main>
 
 <footer class="footer">
@@ -160,6 +161,10 @@
       </ul>
     </nav>
   </div>
+  <span class="footer-arrow" onclick="scrollStart()">
+    <span class="footer-arrow__line"></span>
+    <img class="footer-arrow__img" src="./image/icons/arrow.svg" alt="Вверх">
+  </span>
   <div class="developer">
     <span class="developer-text">Made by</span>
     <a class="developer-link" href="">The Lessoner</a>

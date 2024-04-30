@@ -5,6 +5,7 @@
   <title>Инженерные услуги</title>
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 <body>
 <header class="header engineering__header">
@@ -20,18 +21,17 @@
     </div>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
-        <li>
-          <label for="nav-serv" class="navigation__link">Услуги</label>
-          <input type="checkbox" id="nav-serv"/>
+        <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li">
+          <a href="./services.html" class="navigation__link">Услуги</a>
           <ul class="navigation-sublist">
             <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
             <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
         </li>
-        <li><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
-        <li><a class="navigation__link" href="./contacts.html">Контакты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </div>
@@ -60,12 +60,10 @@
     <div class="title-block engineering__title-block">
       <h2 class="title section__title engineering__title">Объекты по данному направлению</h2>
       <div class="block-buttons">
-        <button class="button button-slider button__back">
-          <img src="image/icons/arrow_back.svg" alt="next">
+        <button class="button button-slider button-back">
         </button>
-        <button class="button button-slider button__next">
+        <button class="button button-slider button-text__next">
           Дальше
-          <img src="image/icons/arrow_next.svg" alt="next">
         </button>
       </div>
     </div>
@@ -77,10 +75,10 @@
       <div class="block-page subpage__block-page">
         <span class="line"></span>
         <div class="slider-page">
-          <span class="page page_active">1</span>
-          <span class="page">2</span>
-          <span class="page">3</span>
-          <span class="page">4</span>
+          <span class="page page_active" onclick="handleClick(this)">1</span>
+          <span class="page" onclick="handleClick(this)">2</span>
+          <span class="page" onclick="handleClick(this)">3</span>
+          <span class="page" onclick="handleClick(this)">4</span>
         </div>
       </div>
     </div>
@@ -161,6 +159,10 @@
       </ul>
     </nav>
   </div>
+  <span class="footer-arrow" onclick="scrollStart()">
+    <span class="footer-arrow__line"></span>
+    <img class="footer-arrow__img" src="./image/icons/arrow.svg" alt="Вверх">
+  </span>
   <div class="developer">
     <span class="developer-text">Made by</span>
     <a class="developer-link" href="">The Lessoner</a>
