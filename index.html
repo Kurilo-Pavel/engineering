@@ -21,10 +21,10 @@
     </div>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
-        <li>
-          <label for="nav-serv" class="navigation__link">Услуги</label>
-          <input type="checkbox" id="nav-serv"/>
+        <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li">
+          <a href="./services.html" class="navigation__link">Услуги</a>
+          <!--          <input type="checkbox" id="nav-serv"/>-->
           <ul class="navigation-sublist">
             <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
             </li>
@@ -32,8 +32,8 @@
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
         </li>
-        <li><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
-        <li><a class="navigation__link" href="./contacts.html">Контакты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li"><a class="navigation__link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </div>
@@ -109,11 +109,11 @@
       <h2 class="title section__title">Наши объекты</h2>
       <div class="block-buttons">
         <button class="button button-slider button__back">
-          <img src="image/icons/arrow_back.svg" alt="next">
+          <!--          <img src="image/icons/arrow_back.svg" alt="next">-->
         </button>
         <button class="button button-slider button__next">
           Дальше
-          <img src="image/icons/arrow_next.svg" alt="next">
+          <!--          <img src="image/icons/arrow_next.svg" alt="next">-->
         </button>
       </div>
     </div>
@@ -132,22 +132,26 @@
       <div class="block-page">
         <span class="line"></span>
         <div class="slider-page">
-          <span class="page">1</span>
-          <span class="page page_active">2</span>
-          <span class="page">3</span>
-          <span class="page">4</span>
+          <span class="page" onclick="handleClick(this)">1</span>
+          <span class="page page_active" onclick="handleClick(this)">2</span>
+          <span class="page" onclick="handleClick(this)">3</span>
+          <span class="page" onclick="handleClick(this)">4</span>
         </div>
       </div>
     </div>
-    <button class="button button-dark slider-object__button">Все наши объекты</button>
+    <a href="./ourObjects.html" class="button button-dark slider-object__button">Все наши объекты</a>
   </section>
 
   <section class="section section__review">
     <div class="title-block">
       <h2 class="title section__title">Отзывы</h2>
       <div class="block-buttons">
-        <button class="button button-slider button__back"><img src="image/icons/arrow_back.svg" alt="next"></button>
-        <button class="button button-slider button__next">Дальше <img src="image/icons/arrow_next.svg" alt="next">
+        <button class="button button-slider button__back">
+          <!--          <img src="image/icons/arrow_back.svg" alt="next">-->
+        </button>
+        <button class="button button-slider button__next">
+          Дальше
+          <!--          <img src="image/icons/arrow_next.svg" alt="next">-->
         </button>
       </div>
     </div>
@@ -155,7 +159,7 @@
     <div class="slider-content slider-content__review">
       <div class="slider-review">
         <div class="block-review">
-          <img class="quotes" src="./image/icons/“.svg" alt="">
+          <!--          <img class="quotes" src="./image/icons/“.svg" alt="">-->
           <h4 class="review-author">От кого отзыв</h4>
           <p class="review review__text">
             Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
@@ -164,7 +168,7 @@
           <button class="button button-slider button__review">открыть фото</button>
         </div>
         <div class="block-review">
-          <img class="quotes" src="./image/icons/“.svg" alt="">
+          <!--          <img class="quotes" src="./image/icons/“.svg" alt="">-->
           <h4 class="review-author">От кого отзыв</h4>
           <p class="review">
             Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
@@ -176,10 +180,10 @@
       <div class="block-page">
         <span class="line"></span>
         <div class="slider-page">
-          <span class="page page_active">1</span>
-          <span class="page">2</span>
-          <span class="page">3</span>
-          <span class="page">4</span>
+          <span class="page page_active" onclick="handleClick(this)">1</span>
+          <span class="page" onclick="handleClick(this)">2</span>
+          <span class="page" onclick="handleClick(this)">3</span>
+          <span class="page" onclick="handleClick(this)">4</span>
         </div>
       </div>
     </div>
@@ -229,8 +233,8 @@
         </p>
       </div>
       <div class="subpage-buttons">
-        <button class="button button-dark">Испытательная Лаборатория</button>
-        <button class="button button-slider subpage-button-contact">Контакты</button>
+        <a href="./laboratory.html" class="button button-dark">Испытательная Лаборатория</a>
+        <a href="./contacts.html" class="button button-slider subpage-button-contact">Контакты</a>
       </div>
     </div>
   </section>
@@ -300,8 +304,12 @@
         <li class="footer-navigation__li"><a class="footer-link" href="">контакты</a></li>
       </ul>
     </nav>
-
   </div>
+  <span class="footer-arrow" onclick="scrollStart()">
+    <span class="footer-arrow__line"></span>
+    <img class="footer-arrow__img" src="./image/icons/arrow.svg" alt="Вверх">
+  </span>
+
   <div class="developer">
     <span class="developer-text">Made by</span>
     <a class="developer-link" href="">The Lessoner</a>
