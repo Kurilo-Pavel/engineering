@@ -1,3 +1,11 @@
+:root {
+  --blue: rgba(17, 25, 226, 1);
+  --lightBlue: rgba(197, 231, 250, 1);
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(7, 7, 7, 1);
+  --red: rgba(226, 17, 17, 1);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -72,7 +80,7 @@ ul {
 }
 
 .main-text {
-  color: rgba(255, 255, 255, 1);
+  color: var(--white);
   text-transform: uppercase;
 }
 
@@ -82,7 +90,7 @@ ul {
 }
 
 .phone-number {
-  color: rgba(197, 231, 250, 1);
+  color: var(--lightBlue);
 }
 
 .navigation {
@@ -99,7 +107,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: var(--white);
 }
 
 .navigation__li {
@@ -107,7 +115,7 @@ ul {
 }
 
 .navigation__li:hover > .navigation__link {
-  border-bottom: 1px solid rgba(197, 231, 250, 1);
+  border-bottom: 1px solid var(--lightBlue);
 }
 
 .navigation__li:hover > .navigation-sublist {
@@ -124,7 +132,7 @@ ul {
   flex-direction: column;
   width: max-content;
   margin-top: 20px;
-  background: rgba(227, 227, 227, 1);
+  background: var(--white);
 }
 
 .navigation-sublink {
@@ -135,9 +143,9 @@ ul {
 }
 
 .navigation-sublink:hover {
-  background: rgba(255, 255, 255, 1);
+  background: var(--white);
   color: rgba(7, 7, 7, 0.8);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .header__content {
@@ -154,7 +162,7 @@ ul {
 }
 
 .header__title {
-  color: rgba(255, 255, 255, 1);
+  color: var(--white);
   font-weight: 700;
   line-height: 43px;
   letter-spacing: -0.5px;
@@ -162,7 +170,7 @@ ul {
 
 .header__text {
   width: 333px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--white);
   line-height: 24px;
   padding-bottom: 15px;
 }
@@ -206,7 +214,7 @@ ul {
 
 .counter-number {
   font-size: 24px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--white);
   line-height: 0;
 }
 
@@ -230,7 +238,7 @@ ul {
 
 .section__title {
   line-height: 44px;
-  color: rgba(7, 7, 7, 1);
+  color: var(--black);
   font-weight: 400;
 }
 
@@ -310,14 +318,14 @@ ul {
   text-align: center;
   font-weight: 400;
   line-height: 31px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--white);
   z-index: 3;
 }
 
 .card__text {
   opacity: 0;
   font-size: 16px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--white);
   line-height: 24px;
   z-index: 3;
 }
@@ -436,7 +444,7 @@ ul {
 
 .page_active {
   font-size: 24px;
-  color: rgba(17, 25, 226, 1);
+  color: var(--blue);
 }
 
 .section__review {
@@ -469,7 +477,7 @@ ul {
   padding: 60px 90px;
   border: 1px solid rgba(0, 0, 0, 1);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: rgba(255, 255, 255, 1);
+  background: var(--white);
 }
 
 .block-review::before {
@@ -482,8 +490,8 @@ ul {
 }
 
 .block-review:hover {
-  border-color: rgba(17, 25, 226, 1);
-  color: rgba(17, 25, 226, 1);
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
 .block-review:hover > .review-author {
@@ -990,6 +998,10 @@ ul {
   background-image: url("./image/contacts_header.png");
 }
 
+.contacts__subpage-text {
+  margin-top: -4px;
+}
+
 .contact-content {
   display: flex;
   align-items: center;
@@ -1007,11 +1019,16 @@ ul {
   margin: 0 1px 30px 0;
   border: 1px solid rgba(7, 7, 7, 1);
   border-radius: 0;
+  padding: 10px;
 }
 
 .contact-field::placeholder {
   color: rgba(7, 7, 7, 0.5);
-  padding: 10px;
+}
+
+.contact-field:focus-visible {
+  outline: none;
+  border-color: var(--blude, rgba(17, 25, 226, 1));
 }
 
 .contact-input {
@@ -1022,12 +1039,20 @@ ul {
   height: 170px;
 }
 
+.input-error {
+  position: absolute;
+  top: 35px;
+  width: max-content;
+  font-size: 14px;
+  color: var(--red, rgba(226, 17, 17, 1))
+}
+
 .contacts-data {
   max-width: 523px;
   width: 100%;
   height: 345px;
   right: -192px;
-  top: -18px;
+  top: -87px;
   padding: 64px 190px 60px 90px;
   background-image: url("./image/contact_data.png");
   background-size: cover;
@@ -1055,7 +1080,7 @@ ul {
 .contact-block {
   display: flex;
   gap: 33px;
-  margin: 0 0 32px 3px;
+  margin: 28px 0 32px 3px;
 }
 
 .contact-radio {
@@ -1067,6 +1092,7 @@ ul {
   align-items: center;
   justify-content: center;
   height: 505px;
+  margin-top: 14px;
   background: rgba(197, 231, 250, 0.35);
 }
 
