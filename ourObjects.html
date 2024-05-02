@@ -5,9 +5,11 @@
   <title>Наши объекты</title>
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/ourObjects.js"></script>
 </head>
 <body class="subpage">
+
 <header class="header objects__header">
   <div class="header-navigation">
     <div class="header__contact">
@@ -53,94 +55,118 @@
 
 <section class="objects-slider">
   <button class="button header__button objects__button">Назад</button>
+  <div class="objects-slider-wrapper">
+    <span class="objects-slider-photo photo_active" id="1">1</span>
+    <span class="objects-slider-photo" id="2">2</span>
+    <span class="objects-slider-photo" id="3">3</span>
+    <span class="objects-slider-photo" id="4">4</span>
+  </div>
   <div class="objects-buttons-block">
-    <button class="button header__button button-back">
-    </button>
-    <button class="button header__button button-next">
-    </button>
+    <button class="button header__button button-back" onclick="handleClickMove('previous')"></button>
+    <button class="button header__button button-next" onclick="handleClickMove('next')"></button>
   </div>
   <div class="slider-circle">
-    <span class="circle circle-active"></span>
-    <span class="circle"></span>
-    <span class="circle"></span>
-    <span class="circle"></span>
+    <span
+      class="circle circle-active"
+      onclick="handleClickCircle(this)"
+      data-photo-id="1"
+    >
+    </span>
+    <span
+      class="circle"
+      onclick="handleClickCircle(this)"
+      data-photo-id="2"
+    >
+    </span>
+    <span
+      class="circle"
+      onclick="handleClickCircle(this)"
+      data-photo-id="3"
+    >
+    </span>
+    <span
+      class="circle"
+      onclick="handleClickCircle(this)"
+      data-photo-id="4"
+    >
+    </span>
   </div>
 </section>
 
 <section class="section">
   <div class="objects__block-cards">
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">1</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">2</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">3</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">4</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">5</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">6</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">7</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">8</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">9</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">10</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">11</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">12</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">13</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">14</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
     <div class="object__card">
-      <div class="object__card-image"></div>
+      <div class="object__card-image">15</div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>

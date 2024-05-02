@@ -4,6 +4,7 @@
   --white: rgba(255, 255, 255, 1);
   --black: rgba(7, 7, 7, 1);
   --red: rgba(226, 17, 17, 1);
+  --speed-animation-slider: 0.5s;
 }
 
 * {
@@ -132,7 +133,7 @@ ul {
   flex-direction: column;
   width: max-content;
   margin-top: 20px;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .navigation-sublink {
@@ -1118,6 +1119,100 @@ ul {
   linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
+.objects-slider-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.objects-slider-photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 2px;
+  border: 2px solid var(--black);
+  background-color: lightgreen;
+  z-index: -1;
+}
+
+.photo_active {
+  z-index: 0;
+  animation: var(--speed-animation-slider) linear 0s 1 both show-photo;
+}
+
+@keyframes show-photo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.move_left-first {
+  z-index: 0;
+  animation: var(--speed-animation-slider) linear 0s 1 both left-first;
+}
+
+@keyframes left-first {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.move_left-last {
+  z-index: 0;
+  animation: var(--speed-animation-slider) linear 0s 1 both left-last;
+}
+
+@keyframes left-last {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.move_right-first {
+  z-index: 0;
+  animation: var(--speed-animation-slider) linear 0s 1 both right-first;
+}
+
+@keyframes right-first {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+.move_right-last {
+  z-index: 0;
+  animation: var(--speed-animation-slider) linear 0s 1 both right-last;
+}
+
+@keyframes right-last {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
 
 .objects-buttons-block {
   display: flex;
@@ -1139,6 +1234,7 @@ ul {
   height: 10px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .circle-active {
@@ -1546,6 +1642,7 @@ ul {
 
 .objects__button {
   padding-inline: 48px;
+  z-index: 2;
 }
 
 .objects__button-arrow {
