@@ -1041,10 +1041,14 @@ ul {
 
 .input-error {
   position: absolute;
-  top: 35px;
+  bottom: 7px;
   width: max-content;
   font-size: 14px;
   color: var(--red, rgba(226, 17, 17, 1))
+}
+
+.contact-label {
+  display: block;
 }
 
 .contacts-data {
