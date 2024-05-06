@@ -21,6 +21,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -71,6 +72,7 @@ ul {
 }
 
 .header-navigation {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,6 +80,7 @@ ul {
   height: 100px;
   top: 0;
   left: 0;
+  padding-inline: 190px;
 }
 
 .main-text {
@@ -153,7 +156,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  top: 100px;
+  top: 200px;
 }
 
 .title {
@@ -231,6 +234,22 @@ ul {
   gap: 45px;
   max-width: 1440px;
   padding-inline: 190px 192px;
+  opacity: 0;
+}
+
+.show_section {
+  /*opacity: 1;*/
+  /*transition: opacity  1s 0.5s;*/
+  animation: 1s 0.5s both show-section;
+}
+
+@keyframes show-section {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .section-services {
@@ -709,12 +728,12 @@ ul {
 }
 
 .footer-arrow {
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   padding: 15px;
-  right: 70px;
-  bottom: 50px;
+  right: 75px;
+  bottom: 95px;
   cursor: pointer;
 }
 
@@ -722,7 +741,7 @@ ul {
   position: absolute;
   width: 32px;
   height: 0;
-  border: 3px solid rgba(7, 7, 7, 0.8);
+  border: 2px solid rgba(7, 7, 7, 0.8);
   border-radius: 3px;
 }
 
@@ -775,7 +794,7 @@ ul {
 }
 
 .header__block-title {
-  top: 74px;
+  top: 174px;
 }
 
 .main-link {
@@ -966,23 +985,37 @@ ul {
   margin: 0 0 7px 23px;
 }
 
-.services-photo-1 {
+.services-photo-wrapper-1 {
   display: grid;
   grid-column-start: 3;
   grid-column-end: 5;
 }
 
-.services-photo-2 {
+.services-photo-wrapper-2 {
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.services-photo-3 {
+.services-photo-2 {
+  left: -110%;
+  transition: 1s left;
+}
+
+.services-photo-wrapper-3 {
   display: grid;
   grid-row-start: 3;
   grid-column-start: 3;
   grid-column-end: 5;
+}
+
+.services-photo-3, .services-photo-1 {
+  left: 110%;
+  transition: 1s left;
+}
+
+.move_left {
+  left: 0;
 }
 
 .services-objects {
@@ -1593,6 +1626,7 @@ ul {
 
 .subpage-button-contact {
   padding-inline: 33px;
+  background-color: var(--white);
 }
 
 .button-certificate {
@@ -1656,7 +1690,6 @@ ul {
 .button_active {
   color: rgba(17, 25, 226, 1);
 }
-
 
 .objects__button-arrow_white {
   border: 1px solid rgba(255, 255, 255, 1);

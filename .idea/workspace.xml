@@ -5,12 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/contacts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engineering_services.html" beforeDir="false" afterPath="$PROJECT_DIR$/engineering_services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laboratory.html" beforeDir="false" afterPath="$PROJECT_DIR$/laboratory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ourObjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourObjects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/supervision.html" beforeDir="false" afterPath="$PROJECT_DIR$/supervision.html" afterDir="false" />
@@ -90,7 +89,8 @@
       <workItem from="1714389433733" duration="8716000" />
       <workItem from="1714458758191" duration="22560000" />
       <workItem from="1714581458313" duration="15667000" />
-      <workItem from="1714644896067" duration="14594000" />
+      <workItem from="1714644896067" duration="15214000" />
+      <workItem from="1714993532070" duration="18645000" />
     </task>
     <servers />
   </component>

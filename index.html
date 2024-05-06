@@ -5,11 +5,10 @@
   <title>Engineering system</title>
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <script src="./scripts/script.js"></script>
 </head>
 <body>
 <header class="header main__header">
-  <div class="header-navigation">
+  <div class="header-navigation" >
     <div class="header__contact">
       <a href="./" class="main-text">
         Logo или/и название
@@ -46,26 +45,26 @@
 
 <main class="main">
 
-  <section class="section">
+  <section class="section" id="counter" data-show="counter">
     <div>
       <div class="block-cards counter">
         <div class="counter-block customers">
-          <span class="counter-number">1000</span>
+          <span class="counter-number" id="customers">0</span>
           <span class="counter-text">Заказчиков</span>
         </div>
         <div class="counter-block objects">
-          <span class="counter-number">1000</span>
+          <span class="counter-number" id="objects">0</span>
           <span class="counter-text">Введенных в эксплуатацию объектов</span>
         </div>
         <div class="counter-block years">
-          <span class="counter-number">1000</span>
+          <span class="counter-number" id="years">0</span>
           <span class="counter-text">Лет на рынке</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-services">
+  <section class="section section-services" data-show="section">
     <h2 class="title section__title">Услуги</h2>
     <p class="section__text">Тут написать что-то пояснительное и притягивающее внимание</p>
     <div class="block-cards">
@@ -102,7 +101,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" data-show="section">
     <div class="title-block">
       <h2 class="title section__title">Наши объекты</h2>
       <div class="block-buttons">
@@ -138,7 +137,7 @@
     <a href="./ourObjects.html" class="button button-dark slider-object__button">Все наши объекты</a>
   </section>
 
-  <section class="section section__review">
+  <section class="section section__review" data-show="section">
     <div class="title-block">
       <h2 class="title section__title">Отзывы</h2>
       <div class="block-buttons">
@@ -188,7 +187,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" data-show="section">
     <div>
       <h2 class="title section__title main__aboutUs-title">Мы - Инжиниринговая компания</h2>
       <p class="main__aboutUs-owner">ИП Курачко И.И.</p>
@@ -307,4 +306,5 @@
   </div>
 </footer>
 </body>
+<script src="./scripts/script.js"></script>
 </html>
