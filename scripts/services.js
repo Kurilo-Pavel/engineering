@@ -1,7 +1,6 @@
 const ob = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     const square = entry.target.children[0];
-    console.log(square)
     if (entry.isIntersecting) {
       square.classList.add("move_left");
       return;
@@ -12,4 +11,5 @@ const ob = new IntersectionObserver(entries => {
 
 ob.observe(document.getElementsByClassName("services-photo-wrapper-1")[0]);
 ob.observe(document.getElementsByClassName("services-photo-wrapper-2")[0]);
+ob.observe(document.getElementsByClassName("services-photo-wrapper-3")[0]);
 ob.observe(document.getElementsByClassName("services-photo-wrapper-3")[0]);
