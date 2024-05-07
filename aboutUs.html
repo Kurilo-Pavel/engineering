@@ -89,13 +89,19 @@
       Это инжиниринговая компания, в лице Курачко Ивана Ивановича, действующего на основании свидетельства о
       государственной регистрации №591932217 выданого Администрацией Октябрьского района г. Гродно от 21.02.2020г.,
       имеющий
-      <span class="subpage-description_blue">аттестат</span>
+      <span class="subpage-description_blue" onclick="clickCertificate()">аттестат</span>
       соответствия №0002901-ИН от 19.11.2021.
     </p>
-    <button class="button button-certificate">аттестат</button>
+    <button class="button button-certificate" onclick="clickCertificate()">аттестат</button>
   </div>
 </section>
-
+<div class="block-certificate">
+  <div class="certificate-content">
+    <img src="./image/certificate_1.png" alt="Аттестат">
+    <img src="./image/certificate_2.png" alt="Аттестат">
+  </div>
+  <button class="button header__button" onclick="clickCertificate()">Назад</button>
+</div>
 <section class="aboutUs-gallery">
   <span class="aboutUs-photo"></span>
   <span class="aboutUs-photo"></span>
@@ -227,4 +233,5 @@
 </footer>
 </body>
 <script src="./scripts/script.js"></script>
+<script src="./scripts/aboutUs.js"></script>
 </html>
