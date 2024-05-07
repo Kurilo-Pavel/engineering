@@ -17,9 +17,6 @@
 }
 
 html {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   overflow-x: hidden;
 }
@@ -62,7 +59,6 @@ ul {
 }
 
 .header {
-  min-width: 1442px;
   padding-inline: 190px 192px;
 }
 
@@ -81,6 +77,7 @@ ul {
   top: 0;
   left: 0;
   padding-inline: 190px;
+  z-index: 5;
 }
 
 .main-text {
@@ -126,10 +123,6 @@ ul {
   display: block;
 }
 
-.navigation__list > li {
-  padding-block: 20px;
-}
-
 .navigation-sublist {
   position: absolute;
   display: none;
@@ -146,10 +139,46 @@ ul {
   color: rgba(7, 7, 7, 0.5);
 }
 
+.nav-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+}
+
+.nav-wrapper:hover ~ .navigation-sublist {
+  display: block;
+}
+
 .navigation-sublink:hover {
   background: var(--white);
   color: rgba(7, 7, 7, 0.8);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.scroll__header {
+  position: fixed;
+  display: none;
+  top: 0;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.color_black {
+  color: rgba(7, 7, 7, 1);
+}
+
+.color_blue {
+  color: rgba(17, 25, 226, 1);
+}
+
+.scroll__navigation-sublist {
+  margin-top: 50px;
+}
+
+.scroll__navigation-li {
+  padding-block: 40px;
 }
 
 .header__content {
@@ -180,7 +209,8 @@ ul {
 }
 
 .block-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   justify-content: space-between;
 }
@@ -232,8 +262,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 45px;
-  max-width: 1440px;
-  padding-inline: 190px 192px;
+  padding-inline: 190px 190px;
   opacity: 0;
 }
 
@@ -280,7 +309,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   min-height: 513px;
-  /*width: 100%;*/
   padding: 60px 30px;
 }
 
@@ -316,14 +344,17 @@ ul {
 
 .services-card {
   background: url("./image/services.png");
+  background-size: cover;
 }
 
 .supervision-card {
   background: url("./image/supervision.png");
+  background-size: cover;
 }
 
 .laboratory-card {
   background: url("./image/laboratory.png");
+  background-size: cover;
 }
 
 .card__inform {
@@ -381,7 +412,7 @@ ul {
 .slider-object {
   position: absolute;
   display: grid;
-  grid-template-columns: 695px 333px 166px;
+  grid-template-columns: 5fr 2.7fr 1fr;
   gap: 30px;
   height: 354px;
   left: 0;
@@ -668,6 +699,7 @@ ul {
 
 .footer__content {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -732,7 +764,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 15px;
-  right: 75px;
+  right: 50px;
   bottom: 95px;
   cursor: pointer;
 }
@@ -800,7 +832,7 @@ ul {
 .main-link {
   margin-bottom: 9px;
   letter-spacing: 0.2px;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 400;
@@ -827,7 +859,6 @@ ul {
 .aboutUs-block {
   display: grid;
   grid-template-columns: 523px 1fr;
-  max-width: 1442px;
   top: 16px;
   background: rgba(197, 231, 250, 0.35);
 }
@@ -846,7 +877,6 @@ ul {
 .subpage-description {
   font-size: 16px;
   line-height: 24px;
-  max-width: 700px;
   width: 100%;
 }
 
@@ -873,8 +903,10 @@ ul {
 }
 
 .quality-block {
-  display: flex;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  justify-items: stretch;
+  gap: 30px;
   margin-top: 76px;
 }
 
@@ -935,16 +967,17 @@ ul {
 .services__header {
   height: 329px;
   background-image: url("./image/services_header.png");
+  background-size: cover;
 }
 
 .services-content {
   display: grid;
-  grid-template-columns:1fr 515px 515px 1fr;
-  gap: 30px;
-  width: max-content;
+  grid-template-columns: 160px 1fr 1fr 160px;
+  column-gap: 30px;
+  row-gap: 26px;
   margin-top: 14px;
   left: -190px;
-  right: -192px;
+  width: 100vw;
 }
 
 .services-block {
@@ -981,8 +1014,9 @@ ul {
 
 .services-block_li {
   list-style: disc;
-  line-height: 25px;
+  line-height: 24px;
   margin: 0 0 7px 23px;
+  color: rgba(7, 7, 7, 0.5);
 }
 
 .services-photo-wrapper-1 {
@@ -1016,6 +1050,8 @@ ul {
 
 .move_left {
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .services-objects {
@@ -1054,6 +1090,7 @@ ul {
   border: 1px solid rgba(7, 7, 7, 1);
   border-radius: 0;
   padding: 10px;
+  font-size: 16px;
 }
 
 .contact-field::placeholder {
@@ -1420,6 +1457,7 @@ ul {
 
 .laboratory-card__title {
   text-align: center;
+  font-weight: 400;
 }
 
 .laboratory-card__text {
@@ -1467,6 +1505,7 @@ ul {
   text-align: center;
   line-height: 25px;
   padding-inline: 21px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .smile {
@@ -1658,7 +1697,7 @@ ul {
   width: min-content;
   padding-block: 10px;
   border: 1px solid rgba(7, 7, 7, 1);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  /*box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);*/
   font-weight: 500;
   background: rgba(255, 255, 255, 1);
 }

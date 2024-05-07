@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Наши объекты</title>
-  <link href="fonts.css" rel="preload">
+  <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <script src="./scripts/ourObjects.js"></script>
 </head>
-<body class="subpage">
+<body class="subpage" onscroll="handleScroll()">
 
 <header class="header objects__header">
   <div class="header-navigation">
@@ -37,6 +37,34 @@
       </ul>
     </nav>
   </div>
+  <div class="header-navigation scroll__header" >
+    <div class="header__contact">
+      <a href="./" class="main-text color_black">
+        Logo или/и название
+      </a>
+      <div class="phone">
+        <img src="./image/icons/black_phone.svg" alt="phone">
+        <a class="phone-number color_blue" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
+      </div>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li scroll__navigation-li">
+          <a href="./services.html" class="navigation__link color_black">Услуги</a>
+          <span class="nav-wrapper"></span>
+          <ul class="navigation-sublist scroll__navigation-sublist">
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
+            <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
+          </ul>
+        </li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <div class="header__block-title">
     <p class="main-link"><a class="main-link" href="./">Главная </a><a class="main-link" href="./services.html"> /
       Услуги </a>/ Наши объекты</p>
@@ -220,7 +248,7 @@
           <p>8(029) 887-10-94</p>
         </a>
         <a class="footer-link footer-link__contact" href="mailto:iwan.kurachko@gmail.com">
-          <img src="./image/icons/letter.svg" alt="letter">
+          <img src="./image/icons/close_letter.svg" alt="letter">
           <p>iwan.kurachko@gmail.com</p>
         </a>
       </div>

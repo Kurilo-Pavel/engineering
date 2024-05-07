@@ -7,7 +7,7 @@
   <link href="styles.css" rel="stylesheet">
   <script src="./scripts/contacts.js"></script>
 </head>
-<body>
+<body onscroll="handleScroll()">
 <header class="header contacts__header">
   <div class="header-navigation">
     <div class="header__contact">
@@ -36,6 +36,38 @@
       </ul>
     </nav>
   </div>
+  <div class="header-navigation scroll__header">
+    <div class="header__contact">
+      <a href="./" class="main-text color_black">
+        Logo или/и название
+      </a>
+      <div class="phone">
+        <img src="./image/icons/black_phone.svg" alt="phone">
+        <a class="phone-number color_blue" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
+      </div>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
+          нас</a></li>
+        <li class="navigation__li scroll__navigation-li">
+          <a href="./services.html" class="navigation__link color_black">Услуги</a>
+          <span class="nav-wrapper"></span>
+          <ul class="navigation-sublist scroll__navigation-sublist">
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
+            </li>
+            <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
+            <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
+          </ul>
+        </li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black"
+                                                            href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
   <div class="header__block-title">
     <p class="main-link"><a class="main-link" href="./">Главная </a>/ Контакты</p>
     <h1 class="title header__title">Контакты</h1>
@@ -49,7 +81,7 @@
       Не стесняйтесь обращаться к нам в любое время. Мы свяжемся с вами, как только сможем!
     </p>
     <div class="contact-content">
-      <form class="contact-form" name="userRequest" method="dialog" >
+      <form class="contact-form" name="userRequest" method="dialog">
         <label class="contact-label">
           <input
             class="contact-field contact-input"
@@ -73,7 +105,7 @@
             class="contact-field contact-input"
             type="text"
             placeholder="Телефон"
-          onblur="handlePhone()">
+            onblur="handlePhone()">
         </label>
         <label class="contact-label">
         <textarea
@@ -98,7 +130,8 @@
         </div>
         <button
           type="button"
-          class="button button-dark" onclick="handleSend(this)">Отправить</button>
+          class="button button-dark" onclick="handleSend(this)">Отправить
+        </button>
       </form>
       <div class="contacts-data">
         <h4 class="contacts-title">Информация:</h4>
@@ -166,7 +199,7 @@
           <p>8(029) 887-10-94</p>
         </a>
         <a class="footer-link footer-link__contact" href="mailto:iwan.kurachko@gmail.com">
-          <img src="./image/icons/letter.svg" alt="letter">
+          <img src="./image/icons/close_letter.svg" alt="letter">
           <p>iwan.kurachko@gmail.com</p>
         </a>
       </div>

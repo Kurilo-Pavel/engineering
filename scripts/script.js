@@ -58,3 +58,24 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 [...document.getElementsByTagName("section")].forEach(el => observer.observe(el));
+
+let navOldTop = 0;
+const handleScroll = () => {
+  const navigation = document.getElementsByClassName("scroll__header")[0];
+  let navCurTop = window.scrollY
+  const heightHeader = document.getElementsByClassName("header")[0].getBoundingClientRect().height;
+  if (navOldTop > navCurTop) {
+    navigation.style.display = "flex";
+    navigation.style.position = "fixed";
+    navigation.style.top = 0 + "px";
+    if (window.scrollY < heightHeader) {
+      navigation.style.display = "none"
+    }
+  } else {
+    if (window.scrollY >= heightHeader && navigation.getBoundingClientRect().top === 0) {
+      navigation.style.position = "absolute";
+      navigation.style.top = window.scrollY + "px";
+    }
+  }
+  navOldTop = navCurTop;
+};

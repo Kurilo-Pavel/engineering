@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engineering_services.html" beforeDir="false" afterPath="$PROJECT_DIR$/engineering_services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/main_header.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/main_header.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laboratory.html" beforeDir="false" afterPath="$PROJECT_DIR$/laboratory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ourObjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourObjects.html" afterDir="false" />
@@ -90,7 +91,8 @@
       <workItem from="1714458758191" duration="22560000" />
       <workItem from="1714581458313" duration="15667000" />
       <workItem from="1714644896067" duration="15214000" />
-      <workItem from="1714993532070" duration="18645000" />
+      <workItem from="1714993532070" duration="24266000" />
+      <workItem from="1715065309240" duration="13848000" />
     </task>
     <servers />
   </component>

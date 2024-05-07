@@ -6,14 +6,14 @@
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body onscroll="handleScroll()">
 
 <header class="header engineering__header">
   <div class="header-navigation">
     <div class="header__contact">
-      <p class="main-text">
+      <a href="./index.html" class="main-text">
         Logo или/и название
-      </p>
+      </a>
       <div class="phone">
         <img src="./image/icons/phone.svg" alt="phone">
         <a class="phone-number" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
@@ -25,7 +25,8 @@
         <li class="navigation__li">
           <a href="./services.html" class="navigation__link">Услуги</a>
           <ul class="navigation-sublist">
-            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
+            </li>
             <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
@@ -35,6 +36,38 @@
       </ul>
     </nav>
   </div>
+  <div class="header-navigation scroll__header">
+    <div class="header__contact">
+      <a href="./" class="main-text color_black">
+        Logo или/и название
+      </a>
+      <div class="phone">
+        <img src="./image/icons/black_phone.svg" alt="phone">
+        <a class="phone-number color_blue" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
+      </div>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
+          нас</a></li>
+        <li class="navigation__li scroll__navigation-li">
+          <a href="./services.html" class="navigation__link color_black">Услуги</a>
+          <span class="nav-wrapper"></span>
+          <ul class="navigation-sublist scroll__navigation-sublist">
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
+            </li>
+            <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
+            <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
+          </ul>
+        </li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black"
+                                                            href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
   <div class="header__block-title">
     <p class="main-link"><a class="main-link" href="./">Главная </a><a class="main-link" href="./services.html"> /
       Услуги </a>/ Оказание инженерных услуг</p>
@@ -139,7 +172,7 @@
           <p>8(029) 887-10-94</p>
         </a>
         <a class="footer-link footer-link__contact" href="mailto:iwan.kurachko@gmail.com">
-          <img src="./image/icons/letter.svg" alt="letter">
+          <img src="./image/icons/close_letter.svg" alt="letter">
           <p>iwan.kurachko@gmail.com</p>
         </a>
       </div>
@@ -151,9 +184,12 @@
         <li class="footer-navigation__li"><a class="footer-link" href="./aboutUs.html">о нас</a></li>
         <li class="footer-navigation__li"><a class="footer-link" href="./services.html">виды работ</a></li>
         <ul class="footer-navigation__list">
-          <li class="footer-navigation__subli"><a class="footer-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
-          <li class="footer-navigation__subli"><a class="footer-sublink" href="./supervision.html">Технический надзор</a></li>
-          <li class="footer-navigation__subli"><a class="footer-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./engineering_services.html">Оказание
+            инженерных услуг</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./supervision.html">Технический
+            надзор</a></li>
+          <li class="footer-navigation__subli"><a class="footer-sublink" href="./laboratory.html">Испытательная
+            лаборатория</a></li>
         </ul>
         <li class="footer-navigation__li"><a class="footer-link" href="./ourObjects.html">наши объекты</a></li>
         <li class="footer-navigation__li"><a class="footer-link" href="./contacts.html">контакты</a></li>
