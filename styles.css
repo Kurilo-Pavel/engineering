@@ -917,11 +917,15 @@ ul {
 }
 
 .certificate-content {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
   gap: 30px;
+  width: 100%;
+}
+
+.certificate-content > img {
   width: 100%;
 }
 
@@ -1121,6 +1125,7 @@ ul {
 .contacts__header {
   height: 329px;
   background-image: url("./image/contacts_header.png");
+  background-size: cover;
 }
 
 .contacts__subpage-text {
@@ -1230,6 +1235,7 @@ ul {
 .objects__header {
   height: 329px;
   background-image: url("./image/objects_header.png");
+  background-size: cover;
 }
 
 .objects-slider {
@@ -1404,6 +1410,7 @@ ul {
 .engineering__header {
   height: 329px;
   background-image: url("./image/engineering.png");
+  background-size: cover;
 }
 
 .engineering-blocks {
@@ -1478,6 +1485,7 @@ ul {
 .laboratory__header {
   height: 329px;
   background-image: url("./image/laboratory_header.png");
+  background-size: cover;
 }
 
 .laboratory__button {
@@ -1531,6 +1539,7 @@ ul {
 .supervision__header {
   height: 329px;
   background-image: url("./image/supervision_header.png");
+  background-size: cover;
 }
 
 .supervision__subpage-content {
