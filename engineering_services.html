@@ -91,28 +91,51 @@
     </div>
   </section>
   <section class="section">
-    <div class="title-block engineering__title-block">
+    <div class="title-block">
       <h2 class="title section__title engineering__title">Объекты по данному направлению</h2>
+
       <div class="block-buttons">
-        <button class="button button-slider button-back">
+        <button
+          class="button button-slider button-back"
+          data-part="services"
+          onclick="handleBlockMove(this,'back','slider-review')"
+        >
         </button>
-        <button class="button button-slider button-text__next">
+        <button
+          class="button button-slider button-text__next"
+          data-part="services"
+          onclick="handleBlockMove(this,'next','slider-review')"
+        >
           Дальше
         </button>
       </div>
     </div>
-    <div class="subpage-block">
-      <div class="subpage-gallery">
-        <div class="subpage-image subpage-image_left"></div>
-        <div class="subpage-image subpage-image_right"></div>
+
+    <div class="slider-content slider-content_width" id="services">
+      <div class="slider-review block_active" data-active="true" data-block="1">
+        <div class="subpage-image">1</div>
+        <div class="subpage-image">1</div>
       </div>
-      <div class="block-page subpage__block-page">
+      <div class="slider-review" data-block="2">
+        <div class="subpage-image">2</div>
+        <div class="subpage-image">2</div>
+      </div>
+      <div class="slider-review" data-block="3">
+        <div class="subpage-image">3</div>
+        <div class="subpage-image">3</div>
+      </div>
+      <div class="slider-review" data-block="4">
+        <div class="subpage-image">4</div>
+        <div class="subpage-image">4</div>
+      </div>
+
+      <div class="block-page block-page_right">
         <span class="line"></span>
-        <div class="slider-page">
-          <span class="page page_active" onclick="handleClick(this)">1</span>
-          <span class="page" onclick="handleClick(this)">2</span>
-          <span class="page" onclick="handleClick(this)">3</span>
-          <span class="page" onclick="handleClick(this)">4</span>
+        <div class="slider-page" data-part="services">
+          <span class="page page_active" onclick="handleClickPage(this,'slider-review')">1</span>
+          <span class="page" onclick="handleClickPage(this,'slider-review')">2</span>
+          <span class="page" onclick="handleClickPage(this,'slider-review')">3</span>
+          <span class="page" onclick="handleClickPage(this,'slider-review')">4</span>
         </div>
       </div>
     </div>
@@ -207,4 +230,5 @@
 </footer>
 </body>
 <script src="./scripts/script.js"></script>
+<script src="./scripts/miniSlider.js"></script>
 </html>

@@ -1,9 +1,9 @@
 const clickCertificate = () => {
-  const block = document.getElementsByClassName("block-certificate")[0];
-  if (block.className === "block-certificate") {
-    block.classList.add("show-certificate");
+  const block = document.getElementsByClassName("block-wrapper")[0];
+  if (block.className === "block-wrapper") {
+    block.classList.add("show-document");
   } else {
-    block.classList.remove("show-certificate");
+    block.classList.remove("show-document");
   }
 };
 

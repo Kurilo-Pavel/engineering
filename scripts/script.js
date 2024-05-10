@@ -24,7 +24,7 @@ const addCount = (start, max, el, speed) => {
   el.innerText = start;
   if (start < max) {
     setTimeout(() => {
-      addCount(start + 1, max, el, speed)
+      addCount(start + 1, max, el, speed);
     }, speed);
   }
 };
@@ -69,7 +69,7 @@ const handleScroll = () => {
     navigation.style.position = "fixed";
     navigation.style.top = 0 + "px";
     if (window.scrollY < heightHeader) {
-      navigation.style.display = "none"
+      navigation.style.display = "none";
     }
   } else {
     if (window.scrollY >= heightHeader && navigation.getBoundingClientRect().top === 0) {

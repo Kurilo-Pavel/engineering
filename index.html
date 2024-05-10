@@ -6,11 +6,11 @@
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
-<body onscroll="handleScroll()">
+<body class="show-page" onscroll="handleScroll()">
 
 <header class="header main__header">
 
-  <div class="header-navigation" >
+  <div class="header-navigation">
     <div class="header__contact">
       <a href="./" class="main-text">
         Logo или/и название
@@ -26,7 +26,8 @@
         <li class="navigation__li">
           <a href="./services.html" class="navigation__link">Услуги</a>
           <ul class="navigation-sublist">
-            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
+            </li>
             <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
@@ -37,7 +38,7 @@
     </nav>
   </div>
 
-  <div class="header-navigation scroll__header" >
+  <div class="header-navigation scroll__header">
     <div class="header__contact">
       <a href="./" class="main-text color_black">
         Logo или/и название
@@ -49,18 +50,22 @@
     </div>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
+          нас</a></li>
         <li class="navigation__li scroll__navigation-li">
           <a href="./services.html" class="navigation__link color_black">Услуги</a>
           <span class="nav-wrapper"></span>
           <ul class="navigation-sublist scroll__navigation-sublist">
-            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
+            </li>
             <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
         </li>
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./ourObjects.html">Наши объекты</a></li>
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Контакты</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black"
+                                                            href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Контакты</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -173,43 +178,116 @@
     <div class="title-block">
       <h2 class="title section__title">Отзывы</h2>
       <div class="block-buttons">
-        <button class="button button-slider button-back">
+        <button
+          class="button button-slider button-back"
+          data-part="review"
+          onclick="handleBlockMove(this,'back','slider-review')"
+        >
         </button>
-        <button class="button button-slider button-text__next">
+        <button
+          class="button button-slider button-text__next"
+          data-part="review"
+          onclick="handleBlockMove(this,'next','slider-review')"
+        >
           Дальше
         </button>
       </div>
     </div>
     <p class="section__text review__text">Небольшое предисловие о том какие мы крутые, а наши клиенты довольные</p>
-    <div class="slider-content slider-content__review">
-      <div class="slider-review">
+
+    <div class="slider-content slider-content__review" id="review">
+      <div class="slider-review block_active" data-active="true" data-block="1">
         <div class="block-review">
-          <h4 class="review-author">От кого отзыв</h4>
+          <h4 class="review-author">От кого отзыв 1</h4>
           <p class="review review__text">
             Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
             выглядеть примерно вот примерно так, смотри
           </p>
-          <button class="button button-slider button__review">открыть фото</button>
+          <button class="button button-slider button__review" onclick="openReview('certificate_2')">открыть фото
+          </button>
         </div>
         <div class="block-review">
-          <h4 class="review-author">От кого отзыв</h4>
+          <h4 class="review-author">От кого отзыв 1</h4>
           <p class="review">
             Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
             выглядеть примерно вот примерно так, смотри
           </p>
-          <button class="button button-slider button__review">открыть фото</button>
+          <button class="button button-slider button__review" onclick="openReview('certificate_1')">открыть фото
+          </button>
         </div>
       </div>
+      <div class="slider-review" data-block="2">
+        <div class="block-review">
+          <h4 class="review-author">От кого отзыв 2</h4>
+          <p class="review review__text">
+            Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
+            выглядеть примерно вот примерно так, смотри
+          </p>
+          <button class="button button-slider button__review" onclick="openReview('certificate_2')">открыть фото
+          </button>
+        </div>
+        <div class="block-review">
+          <h4 class="review-author">От кого отзыв 2</h4>
+          <p class="review">
+            Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
+            выглядеть примерно вот примерно так, смотри
+          </p>
+          <button class="button button-slider button__review" onclick="openReview('certificate_1')">открыть фото
+          </button>
+        </div>
+      </div>
+      <div class="slider-review" data-block="3">
+        <div class="block-review">
+          <h4 class="review-author">От кого отзыв 3</h4>
+          <p class="review review__text">
+            Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
+            выглядеть примерно вот примерно так, смотри
+          </p>
+          <button class="button button-slider button__review" onclick="openReview('certificate_2')">открыть фото
+          </button>
+        </div>
+        <div class="block-review">
+          <h4 class="review-author">От кого отзыв 3</h4>
+          <p class="review">
+            Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
+            выглядеть примерно вот примерно так, смотри
+          </p>
+          <button class="button button-slider button__review" onclick="openReview('certificate_1')">открыть фото
+          </button>
+        </div>
+      </div>
+      <div class="slider-review" data-block="4">
+        <div class="block-review">
+          <h4 class="review-author">От кого отзыв 4</h4>
+          <p class="review review__text">
+            Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
+            выглядеть примерно вот примерно так, смотри
+          </p>
+          <button class="button button-slider button__review" onclick="openReview('certificate_2')">открыть фото
+          </button>
+        </div>
+        <div class="block-review">
+          <h4 class="review-author">От кого отзыв 4</h4>
+          <p class="review">
+            Тут будет отзыв, но кратко, чтобы посмотреть полный отзыв, мы открываем фото. А сам короткий отзыв будет
+            выглядеть примерно вот примерно так, смотри
+          </p>
+          <button class="button button-slider button__review" onclick="openReview('certificate_1')">открыть фото
+          </button>
+        </div>
+      </div>
+
       <div class="block-page">
         <span class="line"></span>
-        <div class="slider-page">
-          <span class="page page_active" onclick="handleClick(this)">1</span>
-          <span class="page" onclick="handleClick(this)">2</span>
-          <span class="page" onclick="handleClick(this)">3</span>
-          <span class="page" onclick="handleClick(this)">4</span>
+        <div class="slider-page" data-part="review">
+          <span class="page page_active" onclick="handleClickPage(this,'slider-review')">1</span>
+          <span class="page" onclick="handleClickPage(this,'slider-review')">2</span>
+          <span class="page" onclick="handleClickPage(this,'slider-review')">3</span>
+          <span class="page" onclick="handleClickPage(this,'slider-review')">4</span>
         </div>
       </div>
     </div>
+
     <div class="our-customers__block">
       <div class="our-customers__wrapper"></div>
       <div class="our-customers">
@@ -218,6 +296,12 @@
       <p class="main-text review__logo">Лого</p>
     </div>
   </section>
+
+  <div class="block-wrapper">
+    <div class="block-documents">
+    </div>
+    <button class="button header__button" onclick="openReview()">Назад</button>
+  </div>
 
   <section class="section" data-show="section">
     <div>
@@ -339,4 +423,6 @@
 </footer>
 </body>
 <script src="./scripts/script.js"></script>
+<script src="./scripts/miniSlider.js"></script>
+<script src="./scripts/mainSlider.js"></script>
 </html>
