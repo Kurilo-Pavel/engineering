@@ -37,7 +37,7 @@
       </ul>
     </nav>
   </div>
-  <div class="header-navigation scroll__header" >
+  <div class="header-navigation scroll__header">
     <div class="header__contact">
       <a href="./" class="main-text color_black">
         Logo или/и название
@@ -49,18 +49,22 @@
     </div>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
+          нас</a></li>
         <li class="navigation__li scroll__navigation-li">
           <a href="./services.html" class="navigation__link color_black">Услуги</a>
           <span class="nav-wrapper"></span>
           <ul class="navigation-sublist scroll__navigation-sublist">
-            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a></li>
+            <li class=""><a class="navigation-sublink" href="./engineering_services.html">Оказание инженерных услуг</a>
+            </li>
             <li class=""><a class="navigation-sublink" href="./supervision.html">Технический надзор</a></li>
             <li class=""><a class="navigation-sublink" href="./laboratory.html">Испытательная лаборатория</a></li>
           </ul>
         </li>
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./ourObjects.html">Наши объекты</a></li>
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Контакты</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black"
+                                                            href="./ourObjects.html">Наши объекты</a></li>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Контакты</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -80,63 +84,81 @@
   </p>
 </section>
 
-<section class="objects-slider">
-  <button class="button header__button objects__button">Назад</button>
-  <div class="objects-slider-wrapper">
-    <span class="objects-slider-photo photo_active" id="1">1</span>
-    <span class="objects-slider-photo" id="2">2</span>
-    <span class="objects-slider-photo" id="3">3</span>
-    <span class="objects-slider-photo" id="4">4</span>
-  </div>
-  <div class="objects-buttons-block">
-    <button class="button header__button button-back" onclick="handleClickMove('previous')"></button>
-    <button class="button header__button button-next" onclick="handleClickMove('next')"></button>
-  </div>
-  <div class="slider-circle">
-    <span
-      class="circle circle-active"
-      onclick="handleClickCircle(this)"
-      data-photo-id="1"
-    >
-    </span>
-    <span
-      class="circle"
-      onclick="handleClickCircle(this)"
-      data-photo-id="2"
-    >
-    </span>
-    <span
-      class="circle"
-      onclick="handleClickCircle(this)"
-      data-photo-id="3"
-    >
-    </span>
-    <span
-      class="circle"
-      onclick="handleClickCircle(this)"
-      data-photo-id="4"
-    >
-    </span>
-  </div>
-</section>
 
-<section class="section">
+<section class="section section__object">
+
+  <div id="slider" class="objects-slider">
+    <div class="slider-wrapper">
+      <button class="button header__button objects__button" onclick="handleCloseSlider(this)">Назад</button>
+      <div class="objects-slider-wrapper">
+                <span class="objects-slider-photo photo_active" id="1">1</span>
+        <!--        <span class="objects-slider-photo" id="2">2</span>-->
+        <!--        <span class="objects-slider-photo" id="3">3</span>-->
+        <!--        <span class="objects-slider-photo" id="4">4</span>-->
+      </div>
+      <div class="objects-buttons-block">
+        <button class="button header__button button-back" onclick="handleClickMove('previous')"></button>
+        <button class="button header__button button-next" onclick="handleClickMove('next')"></button>
+      </div>
+      <div class="slider-circle">
+<!--    <span-->
+<!--      class="circle circle-active"-->
+<!--      onclick="handleClickCircle(this)"-->
+<!--      data-photo-id="1"-->
+<!--    >-->
+<!--    </span>-->
+<!--        <span-->
+<!--          class="circle"-->
+<!--          onclick="handleClickCircle(this)"-->
+<!--          data-photo-id="2"-->
+<!--        >-->
+<!--    </span>-->
+<!--        <span-->
+<!--          class="circle"-->
+<!--          onclick="handleClickCircle(this)"-->
+<!--          data-photo-id="3"-->
+<!--        >-->
+<!--    </span>-->
+<!--        <span-->
+<!--          class="circle"-->
+<!--          onclick="handleClickCircle(this)"-->
+<!--          data-photo-id="4"-->
+<!--        >-->
+<!--    </span>-->
+      </div>
+    </div>
+  </div>
+
   <div class="objects__block-cards">
-    <div class="object__card">
-      <div class="object__card-image">1</div>
+    <div class="object__card" onclick="handleClickCard(this)">
+      <div class="object__card-image">
+        <span class="objects-slider-photo photo_active">1</span>
+        <span class="objects-slider-photo">2</span>
+        <span class="objects-slider-photo">3</span>
+        <span class="objects-slider-photo">4</span>
+        <span class="objects-slider-photo">5</span>
+      </div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
-    <div class="object__card">
-      <div class="object__card-image">2</div>
+    <div class="object__card" onclick="handleClickCard(this)">
+      <div class="object__card-image">
+        <span class="objects-slider-photo photo_active">1</span>
+        <span class="objects-slider-photo">2</span>
+        <span class="objects-slider-photo">3</span>
+      </div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
-    <div class="object__card">
-      <div class="object__card-image">3</div>
+    <div class="object__card" onclick="handleClickCard(this)">
+      <div class="object__card-image">
+        <span class="objects-slider-photo photo_active">1</span>
+        <span class="objects-slider-photo">2</span>
+      </div>
       <h4 class="subpage-text">Символическое название </h4>
       <p class="subpage-description subpage-description-grey">Общественное здание</p>
     </div>
+
     <div class="object__card">
       <div class="object__card-image">4</div>
       <h4 class="subpage-text">Символическое название </h4>
@@ -283,4 +305,5 @@
 </footer>
 </body>
 <script src="./scripts/script.js"></script>
+<script src="./scripts/objectSlider.js"></script>
 </html>

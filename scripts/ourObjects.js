@@ -1,12 +1,12 @@
-const handleClickCircle = (e) => {
-  const children = e.parentElement.children;
-  for (const circle of children) {
-    circle.className = "circle";
-    document.getElementById(circle.dataset.photoId).className = "objects-slider-photo";
-  }
-  e.className = "circle circle-active";
-  document.getElementById(e.dataset.photoId).className = "objects-slider-photo photo_active"
-};
+// const handleClickCircle = (e) => {
+//   const children = e.parentElement.children;
+//   for (const circle of children) {
+//     circle.className = "circle";
+//     document.getElementById(circle.dataset.photoId).className = "objects-slider-photo";
+//   }
+//   e.className = "circle circle-active";
+//   document.getElementById(e.dataset.photoId).className = "objects-slider-photo photo_active"
+// };
 
 const handleClickMove = (value) => {
   const circle = document.getElementsByClassName("circle-active")[0];

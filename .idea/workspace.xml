@@ -4,13 +4,19 @@
     <list default="true" id="10c6ac92-d005-4ae1-a261-3513d5da9ef8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engineering_services.html" beforeDir="false" afterPath="$PROJECT_DIR$/engineering_services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/aboutUs_header.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/aboutUs_header.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/main_header.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/main_header.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/photo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/photo_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/photo_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/photo_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/photo_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/photo_3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/aboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/aboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourObjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourObjects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mainSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mainSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ourObjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ourObjects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supervision.html" beforeDir="false" afterPath="$PROJECT_DIR$/supervision.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -53,15 +59,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../animal_shelter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/image/icons" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\engineering\image" />
       <recent name="D:\projects\engineering\image\icons" />
+      <recent name="D:\projects\engineering\image" />
+      <recent name="D:\projects\engineering\styles" />
       <recent name="D:\projects\engineering\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -93,7 +100,21 @@
       <workItem from="1715184884839" duration="13442000" />
       <workItem from="1715239230590" duration="28395000" />
       <workItem from="1715341090583" duration="4828000" />
-      <workItem from="1715366647220" duration="3670000" />
+      <workItem from="1715366647220" duration="5051000" />
+      <workItem from="1715591256539" duration="17451000" />
+      <workItem from="1715631923950" duration="121000" />
+      <workItem from="1715687442974" duration="288000" />
+      <workItem from="1715719215475" duration="37000" />
+      <workItem from="1717783747749" duration="9446000" />
+      <workItem from="1718099426620" duration="11935000" />
+      <workItem from="1718706228805" duration="15587000" />
+      <workItem from="1718794058791" duration="21051000" />
+      <workItem from="1718881997255" duration="10046000" />
+      <workItem from="1719308640949" duration="15160000" />
+      <workItem from="1719348870356" duration="9825000" />
+      <workItem from="1719390565268" duration="12945000" />
+      <workItem from="1719910667819" duration="29904000" />
+      <workItem from="1720027547013" duration="3482000" />
     </task>
     <servers />
   </component>
@@ -110,5 +131,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/aboutUs.html</url>
+          <line>179</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

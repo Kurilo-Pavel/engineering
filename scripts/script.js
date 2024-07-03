@@ -1,11 +1,3 @@
-const handleClick = (e) => {
-  const children = e.parentElement.children;
-  for (const page of children) {
-    page.className = "page";
-  }
-  e.className = "page page_active";
-};
-
 const scrollStart = () => {
   window.scroll(0, 0);
 };
@@ -47,9 +39,9 @@ const observer = new IntersectionObserver(entries => {
             return animation.finished
           })
         ).then(() => {
-          addCount(0, 20, customer, 100);
-          addCount(0, 20, objects, 120);
-          addCount(0, 20, years, 80);
+          addCount(0, 4, customer, 100);
+          addCount(0, 4, objects, 120);
+          addCount(0, 5, years, 80);
         });
       }
       return;

@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Контакты</title>
+  <title>Виды испытаний</title>
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <link href="select.css" rel="stylesheet">
 </head>
 <body onscroll="handleScroll()">
-<header class="header contacts__header">
+<header class="header typeTests__header">
   <div class="header-navigation">
     <div class="header__contact">
       <a href="./" class="main-text">
@@ -43,7 +42,8 @@
           </ul>
         </li>
         <li class="navigation__li"><a class="navigation__link" href="./instruments.html">Испытательные приборы</a></li>
-        <li class="navigation__li"><a class="navigation__link call__button" href="./contacts.html">Заказать звонок</a></li>
+        <li class="navigation__li"><a class="navigation__link call__button" href="./contacts.html">Заказать звонок</a>
+        </li>
       </ul>
     </nav>
 
@@ -80,156 +80,89 @@
         <li class="navigation__li scroll__navigation-li">
           <a class="navigation__link color_black" href="./instruments.html">Испытательные приборы</a>
         </li>
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Заказать звонок</a>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Заказать
+          звонок</a>
         </li>
       </ul>
     </nav>
   </div>
 
   <div class="header__block-title">
-    <p class="main-link">
-      <a class="main-link" href="./">Главная </a>
-      / Контакты
-    </p>
-    <h1 class="title header__title">Контакты</h1>
+    <p class="main-link"><a class="main-link" href="./">Главная </a>/ Виды испытаний</p>
+    <h1 class="title header__title">Виды испытаний</h1>
   </div>
 </header>
+<main class="main subpage__main">
 
-<section class="section section__contacts">
-  <h2 class="title subpage-title">Связаться с нами</h2>
-  <p class="subpage-text contacts__subpage-text">
-    Для того, чтобы провести испытания продукции в СПЕЦКАПИТАЛСТРОЙ необходимо заполнить документ на проведение
-    испытаний и отправить на электронную почту
-    <a href="mailto:speckapitalstroi@gmail.com">speckapitalstroi@gmail.com</a>
-  </p>
-  <p class="subpage-description contact__description">
-    Документ, прилагаемые к заявке на проведение испытаний, должен быть завереным
-    подписью и печатью (при наличии) заявителя.<br> Заявитель несёт ответственность за достоверность представленных
-    документов.
-  </p>
-  <button class="button button-dark">Скачать документ</button>
-</section>
-<section class="section">
-  <div class="contact-content">
-    <form class="contact-form" name="userRequest" method="dialog">
-      <label class="contact-label" for="name">
-        <p class="placeholder" data-value="empty">Имя <span>*</span></p>
-        <input
-          class="contact-field contact-input"
-          type="text"
-          id="name"
-          onblur="handleName(this)"
-          onkeyup="handleChange(this)"
-          name="name">
-        <span class="input-error"></span>
-      </label>
-      <label class="contact-label" for="email">
-        <p class="placeholder" data-value="empty">E-mail <span>*</span></p>
-        <input
-          class="contact-field contact-input"
-          type="email"
-          id="email"
-          onblur="handleEmail(this)"
-          onkeyup="handleChange(this)"
-          name="email">
-        <span class="input-error"></span>
-      </label>
-      <label class="contact-label" for="phone">
-        <p class="placeholder" data-value="empty">Телефон</p>
-        <input
-          class="contact-field contact-input"
-          type="tel"
-          id="phone"
-          onkeyup="handleChange(this)"
-          onblur="handlePhone(this)">
-      </label>
-      <div
-        class="select"
-        data-status="close"
-        onclick="handleDrop(this)"
-        onblur="closeDrop(event)"
-      >
-        <img src="./image/icons/arrow_close.svg" alt="close" class="select__arrow">
-        <p class="select__value select_default" data-value="default" id="value">Тема вашего обращения <span>*</span></p>
-        <ul class="select__drop">
-          <li class="select__option" onclick="handleCheck(this)">Составить договор на испытание</li>
-          <li class="select__option" onclick="handleCheck(this)">Узнать стоимость</li>
-          <li class="select__option" onclick="handleCheck(this)">Узнать возможность проведения испытаний</li>
-        </ul>
-        <span class="input-error"></span>
-      </div>
-
-      <label class="contact-label" for="message">
-        <p class="placeholder" data-value="empty">Введите текст <span>*</span></p>
-        <textarea
-          class="contact-field contact-textarea"
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          onkeyup="handleChange(this)"
-          onblur="handleMessage(this)"
-        ></textarea>
-        <span class="input-error"></span>
-      </label>
-      <label class="contact-label" for="file">
-        <input
-          type="file"
-          id="file"
-          class="file__input"
-          onchange="handleSelectFile(this)"
-        >
-        <img
-          src="./image/icons/clip.svg"
-          class="input__icon"
-          alt="file"
-        >
-        <input
-          type="text"
-          class="contact-field contact-input file_placeholder"
-          placeholder="Добавьте сюда файл">
-        <span class="input-error"></span>
-      </label>
-      <!--      <div class="contact-block">-->
-      <!--        <label>-->
-      <!--          <input class="contact-radio" type="radio" name="user" checked>-->
-      <!--          Юр. лицо-->
-      <!--        </label>-->
-      <!--        <label>-->
-      <!--          <input class="contact-radio" type="radio" name="user">-->
-      <!--          Физ. лицо-->
-      <!--        </label>-->
-      <!--      </div>-->
-      <button
-        type="button"
-        class="button button-dark" onclick="handleSend(this)">Отправить
-      </button>
-    </form>
-    <div class="contacts-data">
-      <a class=" contact-link" href="tel:8(029) 887-10-94">
-        <img src="./image/icons/phone_blue.png" alt="phone">
-        <p>8(029) 887-10-94</p>
-      </a>
-      <a class="footer-link contact-link" href="mailto:speckapitalstroi@gmail.com">
-        <img src="./image/icons/letter_blue.png" alt="letter">
-        <p>speckapitalstroi@gmail.com</p>
-      </a>
-      <p class="footer-link contact-link contact-address">
-        <img src="./image/icons/point_map_blue.png" alt="map">
-        Г. Гродно, ул. Карла Маркса,<br> д.31-1, оф.416
-      </p>
-      <p class="footer-link contact-link">
-        <img src="./image/icons/time_blue.png" alt="time">
-        08:00 - 17:00
+  <section class="type-test" data-show="section">
+    <div class="type-test__info">
+      <h2 class="title subpage-title">“Спецкапиталстрой” — это</h2>
+      <p class="subpage-text">
+        Написать краткое пояснение. Мы занимаемся, почему мы классные, единсвенные и неповторимые. Возможно что-то еще
+        привлекающее и удерживающее внимание.
       </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="contact-map">
-  <h2 class="title">Карта</h2>
-</section>
+  <section class="type__block">
+    <div class="type__col">
+      <div class="type__info">
+        <img src="./image/icons/tool.svg" alt="icon" class="type__icon">
+        <p class="type__name">Метод ударного импульса</p>
+        <ul class="type__description">
+          <li>Испытания прочности бетона механическим методам неразрушающего контроля.</li>
+        </ul>
+      </div>
+      <a class="button button__secondary" href="./impulse.html">Подробнее</a>
+    </div>
+    <div class="type__col">
+      <div class="type__info">
+        <img src="./image/icons/wall.svg" alt="icon" class="type__icon">
+        <p class="type__name">Метод отрыва со скалыванием</p>
+        <ul class="type__description">
+          <li>Испытания прочности механическим методам неразрушающего контроля.</li>
+        </ul>
+      </div>
+      <a class="button button__secondary" href="./chip-off.html">Подробнее</a>
+    </div>
+    <div class="type__col">
+      <div class="type__info">
+        <img src="./image/icons/vice.svg" alt="icon" class="type__icon">
+        <p class="type__name">
+          Испытания усилия вырыва анкерного устройства и крепежного элемента
+        </p>
+        <ul class="type__description">
+          <li>Испытания прочности механическим методам неразрушающего контроля.</li>
+        </ul>
+      </div>
+      <a class="button button__secondary" href="./pullout.html">Подробнее</a>
+    </div>
+    <div class="type__col">
+      <div class="type__info">
+        <img src="./image/icons/support.svg" alt="icon" class="type__icon">
+        <p class="type__name">Коэффициент уплотнения</p>
+        <ul class="type__description">
+          <li>Испытания степени уплотнения грунта методом динамического зондирования.</li>
+        </ul>
+      </div>
+      <a class="button button__secondary" href="./compaction.html">Подробнее</a>
+    </div>
+  </section>
 
+  <section class="section subpage-objects aboutUs-objects">
+    <h4 class="subpage-text">Написать что-то о качестве и надежности, о наших возможностях.</h4>
+    <p class="subpage-description subpage-description__objects">
+      Чтобы связаться с нами, можно заполнить форму обратной связи на сайте или обратиться по указанным контактам.
+    </p>
+    <a class="button button-dark" href="./contacts.html">Оставить заявку</a>
+  </section>
+
+  <section class="section protocol__block">
+    <p class="protocol__description">Наш протокол (какой протокол, о чем)</p>
+    <button class="button button__secondary button_open" onclick="handleClickProtocol(this)"></button>
+    <img src="" alt="protocol" class="protocol__image">
+  </section>
+</main>
 <footer class="footer">
   <div class="footer__content">
 
@@ -347,9 +280,7 @@
     <a class="developer-link" href="">The Lessoner</a>
   </div>
 </footer>
-
 </body>
 <script src="./scripts/script.js"></script>
-<script src="./scripts/contacts.js"></script>
-
+<script src="./scripts/typeTests.js"></script>
 </html>
