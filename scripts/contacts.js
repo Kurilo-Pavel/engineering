@@ -33,12 +33,13 @@ let data = {
   phone: "",
   topic: ""
 };
+
 const errors = {
-  name: "",
-  email: "",
-  message: "",
+  name: "Заполните поле",
+  email: "Заполните поле",
+  message: "Заполните поле",
   file: "",
-  topic: ""
+  topic: "Заполните поле"
 };
 
 const checkValue = (value, reg) => {
@@ -202,16 +203,28 @@ const handleSelectFile = (el) => {
   }
 };
 
-const handleSend = (e) => {
-  Email.send({
-    SecureToken : "90773d8e-ef06-44b7-85f5-65016dd76647",
-    To : "kurilo.pavel@mail.ru",
-    From : "kurilo.pavel@mail.ru",
-    Subject : "This is the",
-    Body : "And this is the body"
-  }).then(
-    message => console.log(message)
-  );
-    console.log(data)
-    console.log(errors)
-  };
+const handleSend = async () => {
+  if (!errors.name && !errors.email && !errors.topic && !errors.message) {
+    const formData = new FormData();
+    formData.append("name", data.name)
+    formData.append("doc", data.file)
+    const response = await fetch("https://general-server-zhp1.onrender.com/message", {
+      method: "POST",
+      body: formData
+    });
+    const result = await response.json();
+    if (result.status === "success") {
+      const modal = document.getElementsByClassName("modal")[0];
+      modal.classList.add("open__modal");
+    }
+  } else {
+    const errorsEl = document.getElementsByClassName("input-error");
+    for (er of errorsEl) {
+      const value = er.dataset.name;
+      if (errors[value]) {
+        er.textContent = errors[value];
+        er.previousElementSibling.style.borderColor = "red";
+      }
+    }
+  }
+};

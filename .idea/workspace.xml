@@ -3,19 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="10c6ac92-d005-4ae1-a261-3513d5da9ef8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/aboutUs_header.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/aboutUs_header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/main_header.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/main_header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/photo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/photo_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/photo_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/photo_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/photo_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/photo_3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourObjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourObjects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/contacts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/mainSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mainSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ourObjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ourObjects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +53,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/image/icons" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -114,7 +106,12 @@
       <workItem from="1719348870356" duration="9825000" />
       <workItem from="1719390565268" duration="12945000" />
       <workItem from="1719910667819" duration="29904000" />
-      <workItem from="1720027547013" duration="3482000" />
+      <workItem from="1720027547013" duration="4926000" />
+      <workItem from="1720099335880" duration="8663000" />
+      <workItem from="1720209628237" duration="4649000" />
+      <workItem from="1720292703802" duration="4759000" />
+      <workItem from="1720381537852" duration="3923000" />
+      <workItem from="1720443416722" duration="3423000" />
     </task>
     <servers />
   </component>
@@ -138,7 +135,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/aboutUs.html</url>
           <line>179</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

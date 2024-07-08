@@ -121,7 +121,7 @@
           onblur="handleName(this)"
           onkeyup="handleChange(this)"
           name="name">
-        <span class="input-error"></span>
+        <span class="input-error" data-name="name"></span>
       </label>
       <label class="contact-label" for="email">
         <p class="placeholder" data-value="empty">E-mail <span>*</span></p>
@@ -132,7 +132,7 @@
           onblur="handleEmail(this)"
           onkeyup="handleChange(this)"
           name="email">
-        <span class="input-error"></span>
+        <span class="input-error" data-name="email"></span>
       </label>
       <label class="contact-label" for="phone">
         <p class="placeholder" data-value="empty">Телефон</p>
@@ -140,7 +140,6 @@
           class="contact-field contact-input"
           type="tel"
           id="phone"
-          onkeyup="handleChange(this)"
           onblur="handlePhone(this)">
       </label>
       <div
@@ -156,7 +155,7 @@
           <li class="select__option" onclick="handleCheck(this)">Узнать стоимость</li>
           <li class="select__option" onclick="handleCheck(this)">Узнать возможность проведения испытаний</li>
         </ul>
-        <span class="input-error"></span>
+        <span class="input-error" data-name="topic"></span>
       </div>
 
       <label class="contact-label" for="message">
@@ -170,7 +169,7 @@
           onkeyup="handleChange(this)"
           onblur="handleMessage(this)"
         ></textarea>
-        <span class="input-error"></span>
+        <span class="input-error" data-name="message"></span>
       </label>
       <label class="contact-label" for="file">
         <input
@@ -202,7 +201,7 @@
       <!--      </div>-->
       <button
         type="button"
-        class="button button-dark" onclick="handleSend(this)">Отправить
+        class="button button-dark" onclick="handleSend()">Отправить
       </button>
     </form>
     <div class="contacts-data">
@@ -347,7 +346,12 @@
     <a class="developer-link" href="">The Lessoner</a>
   </div>
 </footer>
-
+<div class="modal">
+  <img src="./image/icons/letter_white.svg" alt="icon" class="modal__icon">
+  <h3 class="modal__title">Сообщение было отправлено</h3>
+  <p class="modal__text">Мы свяжемся с вами в ближайшее время и ответим на все ваши вопросы.</p>
+  <a href="./" class="navigation__link call__button">На главную</a>
+</div>
 </body>
 <script src="./scripts/script.js"></script>
 <script src="./scripts/contacts.js"></script>

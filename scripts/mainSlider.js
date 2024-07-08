@@ -4,18 +4,20 @@ const dataAnimate = {
   delay: "100",
   easing: "ease-out"
 };
+let active = false;
 
 const handleClick = (e) => {
   const children = e.parentElement.children;
   const data = dataElements();
-  if (e.textContent != data.large.id) {
+  if (e.textContent != data.large.id && !active) {
+    active = true;
     for (const page of children) {
       page.className = "page";
     }
     e.className = "page page_active";
     data.block.animate([
       {left: `${data.positionBlock}px`},
-      {left: `${-(e.textContent - 1) * 363}px`}
+      {left: `${-(e.textContent - 1) * 363 + data.paddingLeft}px`}
     ], dataAnimate);
 
     data.large.animate([
@@ -33,12 +35,8 @@ const handleClick = (e) => {
       data.large.getAnimations({subtree: true}).map(animation => animation.finished),
     ).then(() => {
       data.large.className = "small_block";
-    });
-
-    Promise.all(
-      small.getAnimations({subtree: true}).map(animation => animation.finished),
-    ).then(() => {
       small.className = "large_block";
+      active = false;
     });
   }
 };
@@ -47,13 +45,14 @@ const handleClick = (e) => {
 const handleNext = () => {
   const data = dataElements();
   const small = document.getElementById(`${data.large.id - 1}`);
-  if (data.large.id - 1 != 0) {
+  if (data.large.id - 1 != 0 && !active) {
+    active = true;
     data.block.animate([
       {
         left: `${data.positionBlock + "px"}`,
       },
       {
-        left: `${data.positionBlock + 363 + "px"}`,
+        left: `${data.positionBlock + 363  + "px"}`,
       }
     ], dataAnimate);
 
@@ -77,6 +76,7 @@ const handleNext = () => {
       data.large.className = "small_block";
       small.className = "large_block";
       activePage(small.id);
+      active = false;
     });
   }
 };
@@ -84,14 +84,14 @@ const handleNext = () => {
 const handlePrev = () => {
   const data = dataElements();
   const small = document.getElementById(`${data.large.id * 1 + 1}`);
-  if (data.block.children.length > data.large.id) {
-
+  if (data.block.children.length > data.large.id && !active) {
+    active = true;
     data.block.animate([
       {
         left: `${data.positionBlock + "px"}`,
       },
       {
-        left: `${data.positionBlock - 363 + "px"}`,
+        left: `${data.positionBlock - 363  + "px"}`,
       }
     ], dataAnimate);
 
@@ -114,8 +114,8 @@ const handlePrev = () => {
     ).then(() => {
       data.large.className = "small_block";
       small.className = "large_block";
-
       activePage(small.id);
+      active = false;
     });
   }
 };
@@ -123,11 +123,15 @@ const handlePrev = () => {
 const dataElements = () => {
   const block = document.getElementsByClassName("slider-object")[0];
   const large = document.getElementsByClassName("large_block")[0];
-  const positionBlock = parseInt(block.getBoundingClientRect().left) - 190;
+  const positionBlock = parseInt(block.getBoundingClientRect().left);
+  const wrapper = document.getElementsByClassName("slider")[0];
+  const paddingLeft = positionBlock - parseInt(wrapper.getBoundingClientRect().left);
+
   return {
-    block: block,
-    positionBlock: positionBlock,
-    large: large,
+    block,
+    positionBlock,
+    large,
+    paddingLeft,
   };
 };
 
