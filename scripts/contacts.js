@@ -208,7 +208,7 @@ const handleSend = async () => {
     const formData = new FormData();
     formData.append("name", data.name)
     formData.append("doc", data.file)
-    const response = await fetch("https://general-server-zhp1.onrender.com/message", {
+    const response = await fetch("https://general-server-zhp1.onrender.com/engineering/message", {
       method: "POST",
       body: formData
     });
