@@ -19,7 +19,6 @@ const handleClick = (e) => {
       {left: `${data.positionBlock}px`},
       {left: `${-(e.textContent - 1) * 363 + data.paddingLeft}px`}
     ], dataAnimate);
-
     data.large.animate([
       {width: "696px"},
       {width: "333px"}
@@ -31,10 +30,11 @@ const handleClick = (e) => {
         {width: "696px"}],
       dataAnimate);
 
+    data.large.className = "small_block";
+
     Promise.all(
       data.large.getAnimations({subtree: true}).map(animation => animation.finished),
     ).then(() => {
-      data.large.className = "small_block";
       small.className = "large_block";
       active = false;
     });
@@ -52,7 +52,7 @@ const handleNext = () => {
         left: `${data.positionBlock + "px"}`,
       },
       {
-        left: `${data.positionBlock + 363  + "px"}`,
+        left: `${data.positionBlock + 363 + "px"}`,
       }
     ], dataAnimate);
 
@@ -70,10 +70,11 @@ const handleNext = () => {
         width: "696px",
       }], dataAnimate);
 
+    data.large.className = "small_block";
+
     Promise.all(
       data.large.getAnimations({subtree: true}).map(animation => animation.finished),
     ).then(() => {
-      data.large.className = "small_block";
       small.className = "large_block";
       activePage(small.id);
       active = false;
@@ -91,7 +92,7 @@ const handlePrev = () => {
         left: `${data.positionBlock + "px"}`,
       },
       {
-        left: `${data.positionBlock - 363  + "px"}`,
+        left: `${data.positionBlock - 363 + "px"}`,
       }
     ], dataAnimate);
 
@@ -109,10 +110,11 @@ const handlePrev = () => {
         width: "696px",
       }], dataAnimate);
 
+    data.large.className = "small_block";
+
     Promise.all(
       data.large.getAnimations({subtree: true}).map(animation => animation.finished),
     ).then(() => {
-      data.large.className = "small_block";
       small.className = "large_block";
       activePage(small.id);
       active = false;
@@ -125,13 +127,14 @@ const dataElements = () => {
   const large = document.getElementsByClassName("large_block")[0];
   const positionBlock = parseInt(block.getBoundingClientRect().left);
   const wrapper = document.getElementsByClassName("slider")[0];
-  const paddingLeft = positionBlock - parseInt(wrapper.getBoundingClientRect().left);
-
+  const blockLeft = positionBlock - parseInt(wrapper.getBoundingClientRect().left);
+  const paddingLeft = parseInt(document.getElementsByClassName("slider-content")[0].getBoundingClientRect().left);
   return {
     block,
     positionBlock,
     large,
-    paddingLeft,
+    blockLeft,
+    paddingLeft
   };
 };
 

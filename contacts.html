@@ -7,7 +7,7 @@
   <link href="styles.css" rel="stylesheet">
   <link href="select.css" rel="stylesheet">
 </head>
-<body onscroll="handleScroll()">
+<body class="show-page" onscroll="handleScroll()">
 <header class="header contacts__header">
   <div class="header-navigation">
     <div class="header__contact">
@@ -24,7 +24,7 @@
       <ul class="navigation__list">
         <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
         <li class="navigation__li">
-          <a href="" class="navigation__link">виды испытаний</a>
+          <a href="./typeTests.html" class="navigation__link">виды испытаний</a>
           <ul class="navigation-sublist">
             <li class="">
               <a class="navigation-sublink" href="./impulse.html">Метод ударного импульса</a>
@@ -43,7 +43,8 @@
           </ul>
         </li>
         <li class="navigation__li"><a class="navigation__link" href="./instruments.html">Испытательные приборы</a></li>
-        <li class="navigation__li"><a class="navigation__link call__button" href="./contacts.html">Заказать звонок</a></li>
+        <li class="navigation__li"><a class="navigation__link call__button" href="./contacts.html">Заказать звонок</a>
+        </li>
       </ul>
     </nav>
 
@@ -80,7 +81,8 @@
         <li class="navigation__li scroll__navigation-li">
           <a class="navigation__link color_black" href="./instruments.html">Испытательные приборы</a>
         </li>
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Заказать звонок</a>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Заказать
+          звонок</a>
         </li>
       </ul>
     </nav>
@@ -140,7 +142,9 @@
           class="contact-field contact-input"
           type="tel"
           id="phone"
-          onblur="handlePhone(this)">
+          onclick="pushPhone(this)"
+          onblur="handlePhone(this)"
+        >
       </label>
       <div
         class="select"
@@ -155,7 +159,7 @@
           <li class="select__option" onclick="handleCheck(this)">Узнать стоимость</li>
           <li class="select__option" onclick="handleCheck(this)">Узнать возможность проведения испытаний</li>
         </ul>
-        <span class="input-error" data-name="topic"></span>
+        <span class="input-error select_error" data-name="topic"></span>
       </div>
 
       <label class="contact-label" for="message">

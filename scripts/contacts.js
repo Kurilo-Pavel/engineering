@@ -79,8 +79,16 @@ const handleEmail = (e) => {
     errors.email = "";
   }
 };
+const pushPhone = (el) => {
+  if (el.value === "") {
+    el.value = "+375";
+    handleChange(el);
+  }
+};
 
 const handlePhone = (e) => {
+  let x = e.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
+  e.value = '+' + x[1] + '(' + x[2] + ') ' + x[3] + '-' + x[4] + '-' + x[5];
   data.phone = e.value;
 };
 
@@ -109,6 +117,7 @@ const handleChange = (el) => {
 const handleDrop = (e) => {
   const children = e.children;
   const isActive = e.dataset.status === "open";
+  console.log(isActive)
   let image, drop, value, error;
 
   for (child of children) {
@@ -131,7 +140,7 @@ const handleDrop = (e) => {
     image.style.transform = "rotate(180deg)";
     drop.classList.remove("select__drop_close");
     drop.classList.add("select__drop_open");
-
+    // window.addEventListener("scroll", closeDrop, {passive: true});
   } else {
     image.style.transform = "rotate(0)";
     e.dataset.status = "close";
@@ -162,7 +171,6 @@ const closeDrop = (e) => {
   const image = document.getElementsByClassName("select__arrow")[0];
   const error = document.getElementsByClassName("input-error")[0];
   if (e.target != select && drop.className.includes("open")) {
-    window.removeEventListener("scroll", closeDrop);
     console.log(drop.parentElement.dataset.status)
     drop.parentElement.dataset.status = "close";
     drop.classList.remove("select__drop_open");
@@ -173,9 +181,8 @@ const closeDrop = (e) => {
       select.style.borderColor = "red";
       errors.topic = "Заполните поле";
     }
-  } else {
-    window.addEventListener("scroll", closeDrop, {passive: true});
   }
+  // window.removeEventListener("scroll", closeDrop);
 };
 window.addEventListener("click", (event) => closeDrop(event), {passive: true});
 

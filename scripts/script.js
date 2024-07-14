@@ -25,8 +25,9 @@ const addCount = (start, max, el, speed) => {
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     const square = entry.target;
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && !square.dataset.viewed) {
       square.classList.add("show_section");
+      square.dataset.viewed = true;
       if (square.dataset.show === "counter") {
         const customer = document.getElementById("customers");
         customer.innerText = 0;
@@ -46,8 +47,12 @@ const observer = new IntersectionObserver(entries => {
       }
       return;
     }
-    square.classList.remove("show_section");
+    // square.classList.remove("show_section");
   });
+}, {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.1,
 });
 [...document.getElementsByTagName("section")].forEach(el => observer.observe(el));
 
@@ -59,7 +64,7 @@ const handleScroll = () => {
   if (navOldTop > navCurTop) {
     navigation.style.display = "flex";
     navigation.style.position = "fixed";
-    navigation.style.top = 0 + "px";
+    navigation.classList.add("show-header");
     if (window.scrollY < heightHeader) {
       navigation.style.display = "none";
     }
@@ -67,6 +72,7 @@ const handleScroll = () => {
     if (window.scrollY >= heightHeader && navigation.getBoundingClientRect().top === 0) {
       navigation.style.position = "absolute";
       navigation.style.top = window.scrollY + "px";
+      navigation.classList.remove("show-header");
     }
   }
   navOldTop = navCurTop;
