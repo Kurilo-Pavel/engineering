@@ -101,6 +101,10 @@ ul {
   gap: 23px;
 }
 
+.header__logo {
+  margin-right: 10px;
+}
+
 .show-header {
   animation: .5s both show_header;
 }
@@ -297,10 +301,12 @@ ul {
 .column_3 {
   grid-column-start: 3;
 }
-.row_2-4{
+
+.row_2-4 {
   grid-row-start: 2;
   grid-row-end: 4;
 }
+
 .row_3 {
   grid-row: 3;
 }
@@ -330,25 +336,26 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  padding: 30px var(--padding-main) 50px;
+  height: 514px;
+  /*padding: 30px var(--padding-main) 50px;*/
   justify-content: space-between;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./image/bg_typeTests.png");
+  /*background-image: url("./image/bg_typeTests.png");*/
 }
 
-.type-test__cards:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--black_80);
-}
+/*.type-test__cards:before {*/
+/*  content: '';*/
+/*  display: block;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  background-color: var(--black_80);*/
+/*}*/
 
 .device__block {
   position: relative;
@@ -356,6 +363,7 @@ ul {
   flex-direction: column;
   gap: 60px;
   padding-block: 30px 65px;
+  z-index: 2;
 }
 
 .device__info {
@@ -465,6 +473,7 @@ ul {
 
 .wrapper__card {
   width: 100%;
+  background: rgba(0, 0, 0, 0.5);
   transition: background-color, 1s;
 }
 
@@ -480,7 +489,7 @@ ul {
   align-items: center;
   height: 100%;
   gap: 30px;
-  padding: 30px 3px;
+  padding: 60px 30px;
 }
 
 .bg__services {
@@ -502,21 +511,42 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .card__title {
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 30px;
   color: var(--white);
 }
 
 .card__text {
   font-size: 16px;
   line-height: 24px;
-  color: var(--white_60);
+  /*color: var(--white_60);*/
+  color: var(--white);
+  opacity: 0;
+}
+
+.card__button {
+  opacity: 0;
+}
+
+.card:hover {
+  background-color: var(--black_80);
+  transition: background-color, 1s;
+}
+
+.card:hover > .card__inform > .card__text {
+  opacity: 1;
+  transition: opacity, 1s;
+}
+
+.card:hover > .card__button {
+  opacity: 1;
+  transition: opacity, 1s;
 }
 
 .card__list {
@@ -793,6 +823,10 @@ ul {
 .review__logo {
   height: 120px;
   margin-bottom: 130px;
+}
+
+.margin-top_115 {
+  margin-top: 115px;
 }
 
 .section__logo-company {
@@ -2471,6 +2505,7 @@ ul {
 
 .instruments__info {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 30px;
   width: 100%;

@@ -9,13 +9,11 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body class="show-page" onscroll="handleScroll()">
-
 <header class="header main__header">
-
   <div class="header-navigation">
     <div class="header__contact">
       <a href="./" class="main-text">
-        <img src="./image/logo_white.png" alt="Логотип">
+        <img class="header__logo" src="./image/logo_white.png" alt="Логотип">
         Спецкапиталстрой
       </a>
       <div class="phone">
@@ -27,7 +25,7 @@
       <ul class="navigation__list">
         <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
         <li class="navigation__li">
-          <a href="" class="navigation__link">виды испытаний</a>
+          <a href="./typeTests.html" class="navigation__link">виды испытаний</a>
           <ul class="navigation-sublist">
             <li class="">
               <a class="navigation-sublink" href="./impulse.html">Метод ударного импульса</a>
@@ -55,6 +53,7 @@
   <div class="header-navigation scroll__header">
     <div class="header__contact">
       <a href="./" class="main-text color_black">
+        <img class="header__logo" src="./image/logo_blue.png" alt="Логотип">
         Спецкапиталстрой
       </a>
       <div class="phone">
@@ -67,7 +66,7 @@
         <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
           нас</a></li>
         <li class="navigation__li scroll__navigation-li">
-          <a href="" class="navigation__link color_black">виды испытаний</a>
+          <a href="./typeTests.html" class="navigation__link color_black">виды испытаний</a>
           <span class="nav-wrapper"></span>
           <ul class="navigation-sublist scroll__navigation-sublist">
             <li class=""><a class="navigation-sublink" href="./impulse.html">Метод ударного импульса</a>
@@ -133,57 +132,45 @@
       <div class="wrapper__card">
         <div class="card">
           <div class="card__inform">
-            <img src="./image/icons/tool.svg" alt="icon">
             <h4 class="card__title">Метод ударного импульса</h4>
-            <ul class="card__text card__list">
-              <li>
-                Испытания прочности бетона механическим методам неразрушающего контроля.
-              </li>
-            </ul>
+            <p class="card__text">
+              Испытания прочности бетона механическим методам неразрушающего контроля.
+            </p>
           </div>
-          <a class="button header__button" role="button" href="./impulse.html">Подробнее</a>
+          <a class="button header__button card__button" href="./impulse.html">Подробнее</a>
         </div>
       </div>
       <div class="wrapper__card">
         <div class="card">
           <div class="card__inform">
-            <img src="./image/icons/wall.svg" alt="icon">
             <h4 class="card__title">Метод отрыва со скалыванием</h4>
-            <ul class="card__text card__list">
-              <li>
-                Испытания прочности механическим методам неразрушающего контроля.
-              </li>
-            </ul>
+            <p class="card__text">
+              Испытания прочности механическим методам неразрушающего контроля.
+            </p>
           </div>
-          <a class="button header__button card__button" role="button" href="./chip-off.html">Подробнее</a>
+          <a class="button header__button card__button" href="./chip-off.html">Подробнее</a>
         </div>
       </div>
       <div class="wrapper__card">
         <div class="card">
           <div class="card__inform">
-            <img src="./image/icons/vice.svg" alt="icon">
             <h4 class="card__title">Испытания усилия вырыва анкерного устройства и крепежного элемента</h4>
-            <ul class="card__text card__list">
-              <li>
-                Испытания прочности механическим методам неразрушающего контроля.
-              </li>
-            </ul>
+            <p class="card__text">
+              При устройстве тепловой изоляции наружных ограждающих конструкций зданий, сооружений и др.
+            </p>
           </div>
-          <a class="button header__button card__button" role="button" href="./pullout.html">Подробнее</a>
+          <a class="button header__button card__button" href="./pullout.html">Подробнее</a>
         </div>
       </div>
       <div class="wrapper__card">
         <div class="card">
           <div class="card__inform">
-            <img src="./image/icons/support.svg" alt="icon">
             <h4 class="card__title">Коэффициент уплотнения</h4>
-            <ul class="card__text card__list">
-              <li>
-                Испытания степени уплотнения грунта методом динамического зондирования.
-              </li>
-            </ul>
+            <p class="card__text">
+              Испытания степени уплотнения грунта методом динамического зондирования.
+            </p>
           </div>
-          <a class="button header__button card__button" role="button" href="./compaction.html">Подробнее</a>
+          <a class="button header__button card__button" href="./compaction.html">Подробнее</a>
         </div>
       </div>
     </div>
@@ -227,14 +214,15 @@
               <span class="photo photo3"></span>
             </div>
             <h4 class="photo_name">Электронный измеритель прочности бетона ИПС - МГ4.04</h4>
-            <p class="photo_description">Прибор для определения прочности бетона,  раствора и строительной керамики.</p>
+            <p class="photo_description">Прибор для определения прочности бетона, раствора и строительной керамики.</p>
           </div>
           <div class="block-photo">
             <div class="small_block" id="4">
               <span class="photo photo4"></span>
             </div>
             <h4 class="photo_name">Измеритель адгезии ПСО - МГ4</h4>
-            <p class="photo_description">Прибор для измерений силы при испытании адгезии керамической плитки, штукатурки.</p>
+            <p class="photo_description">Прибор для измерений силы при испытании адгезии керамической плитки,
+              штукатурки.</p>
           </div>
         </div>
       </div>
