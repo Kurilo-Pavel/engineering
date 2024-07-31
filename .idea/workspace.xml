@@ -7,6 +7,12 @@
       <change beforePath="$PROJECT_DIR$/chip-off.html" beforeDir="false" afterPath="$PROJECT_DIR$/chip-off.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/compaction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engineering_services.html" beforeDir="false" afterPath="$PROJECT_DIR$/engineering_services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/bg_protocol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/bg_test_info.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/bg_test_info.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/customers.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/customers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/objects.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/objects.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/years.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/years.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/impulse.html" beforeDir="false" afterPath="$PROJECT_DIR$/impulse.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/instruments.html" beforeDir="false" afterPath="$PROJECT_DIR$/instruments.html" afterDir="false" />
@@ -55,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/image/icons" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -63,8 +69,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\engineering\image" />
       <recent name="D:\projects\engineering\image\icons" />
+      <recent name="D:\projects\engineering\image" />
       <recent name="D:\projects\engineering\styles" />
       <recent name="D:\projects\engineering\fonts" />
     </key>
@@ -123,7 +129,10 @@
       <workItem from="1720882420258" duration="2527000" />
       <workItem from="1720985406548" duration="1864000" />
       <workItem from="1721063312907" duration="1347000" />
-      <workItem from="1721117594512" duration="5056000" />
+      <workItem from="1721117594512" duration="6038000" />
+      <workItem from="1722345096303" duration="1031000" />
+      <workItem from="1722426294318" duration="613000" />
+      <workItem from="1722432315572" duration="4634000" />
     </task>
     <servers />
   </component>
