@@ -3,22 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="10c6ac92-d005-4ae1-a261-3513d5da9ef8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chip-off.html" beforeDir="false" afterPath="$PROJECT_DIR$/chip-off.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/compaction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engineering_services.html" beforeDir="false" afterPath="$PROJECT_DIR$/engineering_services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/bg_protocol.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/bg_test_info.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/bg_test_info.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/customers.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/customers.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/objects.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/objects.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/years.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/years.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impulse.html" beforeDir="false" afterPath="$PROJECT_DIR$/impulse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instruments.html" beforeDir="false" afterPath="$PROJECT_DIR$/instruments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pullout.html" beforeDir="false" afterPath="$PROJECT_DIR$/pullout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/typeTests.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +117,7 @@
       <workItem from="1721117594512" duration="6038000" />
       <workItem from="1722345096303" duration="1031000" />
       <workItem from="1722426294318" duration="613000" />
-      <workItem from="1722432315572" duration="4634000" />
+      <workItem from="1722432315572" duration="5791000" />
     </task>
     <servers />
   </component>
