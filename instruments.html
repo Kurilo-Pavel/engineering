@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Испытательные приборы</title>
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+  <link href="mobile_styles.css" rel="stylesheet">
+  <link href="burger_styles.css" rel="stylesheet">
   <link rel="icon" type="image/svg" sizes="32x32" href="./image/logo_white.png"/>
 </head>
 <body class="show-page" onscroll="handleScroll()">
@@ -20,6 +23,10 @@
         <a class="phone-number" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
       </div>
     </div>
+    <input type="checkbox" id="burger">
+    <label for="burger" class="burger">
+      <span class="menu-burger"></span>
+    </label>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
@@ -43,7 +50,8 @@
           </ul>
         </li>
         <li class="navigation__li"><a class="navigation__link" href="./instruments.html">Испытательные приборы</a></li>
-        <li class="navigation__li"><a class="navigation__link call__button" href="./contacts.html">Заказать звонок</a></li>
+        <li class="navigation__li"><a class="navigation__link call__button" href="./contacts.html">Заказать звонок</a>
+        </li>
       </ul>
     </nav>
 
@@ -59,6 +67,10 @@
         <a class="phone-number color_blue" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
       </div>
     </div>
+    <input type="checkbox" id="burger-double">
+    <label for="burger-double" class="burger">
+      <span class="menu-burger menu-burger_black"></span>
+    </label>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
@@ -81,7 +93,8 @@
         <li class="navigation__li scroll__navigation-li">
           <a class="navigation__link color_black" href="./instruments.html">Испытательные приборы</a>
         </li>
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Заказать звонок</a>
+        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./contacts.html">Заказать
+          звонок</a>
         </li>
       </ul>
     </nav>
@@ -100,8 +113,8 @@
     <div class="type-test__info">
       <h2 class="title subpage-title">Для испытаний используем только качественную технику</h2>
       <p class="subpage-text">
-        Написать краткое пояснение. Рассказать какая техника, в чем ее преимущество, написать, что для разного метода
-        используется разные приборы. Как-то похвалить себя и свои методы проверки качества.
+        Наши приборы обеспечивают высокую точность и надежность измерений, что делает их незаменимыми в строительстве и
+        обследовании зданий и сооружений.
       </p>
     </div>
   </section>
@@ -121,7 +134,7 @@
           значения и после вырыва фрагмента бетона падает до нуля. Электронный блок автоматически отслеживает процесс
           нагружения и запоминает экстремальные точки этого процесса,
         </p>
-        <p class="subpage-description color_blue">Вид испытания: “Название”.</p>
+        <p class="subpage-description color_blue">Вид испытания: “Метод отрыва со скалыванием”.</p>
       </div>
       <div class="instruments__subInfo">
         <div class="instruments__title">
@@ -159,7 +172,7 @@
           Динамическим зондированием определяют плотность грунта путем измерения сопротивления погружению зонда под
           действием возрастающего числа приложений ударной нагрузки.
         </p>
-        <p class="subpage-description color_blue">Вид испытания: “Название”.</p>
+        <p class="subpage-description color_blue">Вид испытания: “Коэффициент уплотнения”.</p>
       </div>
       <div class="instruments__subInfo">
         <div class="instruments__title">
@@ -202,7 +215,7 @@
           параметрам ударного импульса, поступающим от склерометра, оценивает твердость и упругопластические свойства
           испытываемого материала преобразует параметр импульса в прочность и вычисляет соответствующий класс бетона.
         </p>
-        <p class="subpage-description color_blue">Вид испытания: “Название”.</p>
+        <p class="subpage-description color_blue">Вид испытания: “Метод ударного импульса”.</p>
       </div>
       <div class="instruments__subInfo">
         <div class="instruments__title">
@@ -234,7 +247,8 @@
           Результаты измерений выводятся на дисплей, передаются в память прибора и на выходной разъем интерфейса связи с
           компьютером.
         </p>
-        <p class="subpage-description color_blue">Вид испытания: “Название”.</p>
+        <p class="subpage-description color_blue">Вид испытания: “Испытания усилия вырыва анкерного устройства и
+          крепежного элемента”.</p>
       </div>
       <div class="instruments__subInfo">
         <div class="instruments__title">
@@ -265,10 +279,10 @@
       <div class="main__aboutUs-wrapper"></div>
       <div class="main__aboutUs">
         <p class="main__aboutUs-inform">
-          Написать что-то о проектах.
+          Точность и надежность в каждом измерении!
         </p>
         <p class="main__aboutUs-contact">
-          Написать чем занимаемся, проводим различные испытания что-то об этом написать.
+          Мы проводим комплексные испытания строительных конструкций, используя новейшие технологии и методы анализа.
         </p>
       </div>
       <div class="subpage-buttons">

@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Метод ударного импульса</title>
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+  <link href="mobile_styles.css" rel="stylesheet">
+  <link href="burger_styles.css" rel="stylesheet">
   <link rel="icon" type="image/svg" sizes="32x32" href="./image/logo_white.png"/>
 </head>
 <body class="show-page" onscroll="handleScroll()">
@@ -20,6 +23,10 @@
         <a class="phone-number" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
       </div>
     </div>
+    <input type="checkbox" id="burger">
+    <label for="burger" class="burger">
+      <span class="menu-burger"></span>
+    </label>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
@@ -60,6 +67,10 @@
         <a class="phone-number color_blue" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
       </div>
     </div>
+    <input type="checkbox" id="burger-double">
+    <label for="burger-double" class="burger">
+      <span class="menu-burger menu-burger_black"></span>
+    </label>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
@@ -121,8 +132,7 @@
         <div class="device__info">
           <p class="subpage-text">При данном методе используется “название аппарата”</p>
           <p class="subpage-description ">
-            Описание аппарата, что им делают, из чего и любая информация, которая покажется интресной для потенциального
-            заказчика.тся испытания, что-то о качестве оборудования.
+            Аппарат позволяет проводить неразрушающие испытания, обеспечивая высокую точность и оперативность измерений.
           </p>
         </div>
         <a class="button button-dark" href="./instruments.html">Наши аппараты</a>
@@ -138,37 +148,37 @@
     <div class="quality__box">
       <div class="quality__title">
         <img src="./image/icons/quality.svg" alt="quality">
-        <p class="quality__name">Качество</p>
+        <p class="quality__name">Неразрушающий характер</p>
       </div>
       <p class="quality__description">
-        Тут мы пишем какое-то особенное достоинство этого метода, максимально расписываем.
+        Оценка прочности бетона без повреждения конструкций, что особенно важно для уже построенных объектов.
       </p>
     </div>
     <div class="quality__box">
       <div class="quality__title">
         <img src="./image/icons/quality.svg" alt="quality">
-        <p class="quality__name">Качество</p>
+        <p class="quality__name">Экономичность</p>
       </div>
       <p class="quality__description">
-        Тут мы пишем какое-то особенное достоинство этого метода, максимально расписываем.
+        Снижение затрат на проведение испытаний по сравнению с разрушающими методами.
       </p>
     </div>
     <div class="quality__box">
       <div class="quality__title">
         <img src="./image/icons/quality.svg" alt="quality">
-        <p class="quality__name">Качество</p>
+        <p class="quality__name">Оперативность</p>
       </div>
       <p class="quality__description">
-        Тут мы пишем какое-то особенное достоинство этого метода, максимально расписываем.
+        Испытания проводятся быстро и не требуют длительной подготовки образцов.
       </p>
     </div>
     <div class="quality__box">
       <div class="quality__title">
         <img src="./image/icons/quality.svg" alt="quality">
-        <p class="quality__name">Качество</p>
+        <p class="quality__name">Универсальность</p>
       </div>
       <p class="quality__description">
-        Тут мы пишем какое-то особенное достоинство этого метода, максимально расписываем.
+        Применимы к различным типам бетона и конструкциям
       </p>
     </div>
   </section>
@@ -176,8 +186,9 @@
   <section class="section test__info">
     <p class="subpage-text subpage-text_white">Что мы получаем после данного вида испытания?</p>
     <p class="subpage-description subpage-text_white test__info_width">
-      Написать что-то о данных, которые мы можем получить и что-то о том, что с ними можно делать. Пишем как это
-      помогает при строительстве, что помогает предотвратить/чего избежать, как это влияет на работу.
+      Показатели прочности, карта распределения прочности, анализ качества бетона, рекомендации по дальнейшей
+      эксплуатации: эти результаты позволяют принимать обоснованные решения по эксплуатации, обслуживанию бетонных
+      конструкций, обеспечивая их долговечность и безопасность.
     </p>
   </section>
 
@@ -193,8 +204,9 @@
     <div class="main__aboutUs-block main__aboutUs-block_type">
       <h2 class="title section__title">Мы - Спецкапиталстрой</h2>
       <p class="section__text">
-        Тут пишем что-то, что поможет понять чем мы занимаемся, почему мы классные, единсвенные и неповторимые. Возможно
-        что-то еще привлекающее и удерживающее внимание.
+        Мы проводим комплексные испытания строительных конструкций, используя новейшие технологии и методы анализа. Наша
+        цель – подтвердить соответствие ваших проектов всем необходимым стандартам и требованиям, обеспечивая их
+        долговечность и безопасность.
       </p>
     </div>
     <div class="main__aboutUs-content">
@@ -249,7 +261,7 @@
       <div class="main__aboutUs-wrapper"></div>
       <div class="main__aboutUs">
         <p class="main__aboutUs-inform">
-          Написать что-то о качестве и надежности, о наших возможностях.
+          Точные испытания для безупречных строительных решений.
         </p>
         <p class="main__aboutUs-contact">
           Чтобы связаться с нами, можно заполнить форму обратной связи на сайте или обратиться по указанным контактам.

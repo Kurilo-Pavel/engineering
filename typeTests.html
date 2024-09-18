@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Виды испытаний</title>
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+  <link href="mobile_styles.css" rel="stylesheet">
+  <link href="burger_styles.css" rel="stylesheet">
   <link rel="icon" type="image/svg" sizes="32x32" href="./image/logo_white.png"/>
 </head>
 <body class="show-page" onscroll="handleScroll()">
@@ -20,6 +23,10 @@
         <a class="phone-number" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
       </div>
     </div>
+    <input type="checkbox" id="burger">
+    <label for="burger" class="burger">
+      <span class="menu-burger"></span>
+    </label>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
@@ -60,6 +67,10 @@
         <a class="phone-number color_blue" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
       </div>
     </div>
+    <input type="checkbox" id="burger-double">
+    <label for="burger-double" class="burger">
+      <span class="menu-burger menu-burger_black"></span>
+    </label>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
@@ -100,8 +111,9 @@
     <div class="type-test__info">
       <h2 class="title subpage-title">“Спецкапиталстрой” — это</h2>
       <p class="subpage-text">
-        Написать краткое пояснение. Мы занимаемся, почему мы классные, единсвенные и неповторимые. Возможно что-то еще
-        привлекающее и удерживающее внимание.
+        Комплексные испытания строительных конструкций, используя новейшие технологии и методы анализа. Наша цель –
+        подтвердить соответствие ваших проектов всем необходимым стандартам и требованиям, обеспечивая их долговечность
+        и безопасность.
       </p>
     </div>
   </section>
@@ -152,7 +164,7 @@
   </section>
 
   <section class="section subpage-objects aboutUs-objects">
-    <h4 class="subpage-text">Написать что-то о качестве и надежности, о наших возможностях.</h4>
+    <h4 class="subpage-text">Точные испытания для безупречных строительных решений.</h4>
     <p class="subpage-description subpage-description__objects">
       Чтобы связаться с нами, можно заполнить форму обратной связи на сайте или обратиться по указанным контактам.
     </p>

@@ -1,8 +1,11 @@
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Испытания усилия вырыва анкерного устройства и крепежного элемента</title>
   <link href="fonts.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+  <link href="mobile_styles.css" rel="stylesheet">
+  <link href="burger_styles.css" rel="stylesheet">
   <link rel="icon" type="image/svg" sizes="32x32" href="./image/logo_white.png"/>
 </head>
 <body class="show-page" onscroll="handleScroll()">
@@ -18,6 +21,10 @@
         <a class="phone-number" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
       </div>
     </div>
+    <input type="checkbox" id="burger">
+    <label for="burger" class="burger">
+      <span class="menu-burger"></span>
+    </label>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
@@ -58,6 +65,10 @@
         <a class="phone-number color_blue" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
       </div>
     </div>
+    <input type="checkbox" id="burger-double">
+    <label for="burger-double" class="burger">
+      <span class="menu-burger menu-burger_black"></span>
+    </label>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
@@ -121,15 +132,15 @@
       </div>
       <div class="device__block column_2">
         <div class="device__info">
-          <p class="subpage-text">При данном методе используется “название аппарата”</p>
+          <p class="subpage-text">При данном методе используется “Измеритель адгезии ПСО - МГ4”</p>
           <p class="subpage-description ">
-            Описание аппарата, что им делают, из чего и любая информация, которая покажется интресной для потенциального
-            заказчика.тся испытания, что-то о качестве оборудования.
+            Используется для измерения прочности сцепления различных покрытий с основанием, а также для определения
+            усилия вырыва анкерных болтов и крепежных элементов
           </p>
         </div>
         <a class="button button-dark" href="./instruments.html">Наши аппараты</a>
       </div>
-      <img class="device__image column_3 row_2-4" src="" alt="photo">
+      <img class="device__image column_3 row_2-4" src="image/ПСО%20-%20МГ4.png" alt="photo">
       <span class="type-test__wrapper row_3"></span>
     </div>
   </section>
@@ -138,37 +149,37 @@
     <div class="quality__box">
       <div class="quality__title">
         <img src="./image/icons/quality.svg" alt="quality">
-        <p class="quality__name">Качество</p>
+        <p class="quality__name">Точность</p>
       </div>
       <p class="quality__description">
-        Тут мы пишем какое-то особенное достоинство этого метода, максимально расписываем.
+        Точно определяет усилие, необходимое для вырыва анкера или крепежного элемента из материала основания.
       </p>
     </div>
     <div class="quality__box">
       <div class="quality__title">
         <img src="./image/icons/quality.svg" alt="quality">
-        <p class="quality__name">Качество</p>
+        <p class="quality__name">Безопасность</p>
       </div>
       <p class="quality__description">
-        Тут мы пишем какое-то особенное достоинство этого метода, максимально расписываем.
+        Выявляет слабые места в крепежных системах до их использования, что снижает риск аварий и повреждений.
       </p>
     </div>
     <div class="quality__box">
       <div class="quality__title">
         <img src="./image/icons/quality.svg" alt="quality">
-        <p class="quality__name">Качество</p>
+        <p class="quality__name">Надежность</p>
       </div>
       <p class="quality__description">
-        Тут мы пишем какое-то особенное достоинство этого метода, максимально расписываем.
+        Испытания помогают оценить надежность крепежных систем в реальных условиях эксплуатации.
       </p>
     </div>
     <div class="quality__box">
       <div class="quality__title">
         <img src="./image/icons/quality.svg" alt="quality">
-        <p class="quality__name">Качество</p>
+        <p class="quality__name">Экономичность</p>
       </div>
       <p class="quality__description">
-        Тут мы пишем какое-то особенное достоинство этого метода, максимально расписываем.
+        Помогает избежать затрат на ремонт и замену крепежных систем за счет своевременного выявления дефектов.
       </p>
     </div>
   </section>
@@ -176,8 +187,9 @@
   <section class="section test__info">
     <p class="subpage-text subpage-text_white">Что мы получаем после данного вида испытания?</p>
     <p class="subpage-description subpage-text_white test__info_width">
-      Написать что-то о данных, которые мы можем получить и что-то о том, что с ними можно делать. Пишем как это
-      помогает при строительстве, что помогает предотвратить/чего избежать, как это влияет на работу.
+      Максимальное усилие вырыва, прочность крепежной системы, соответствие стандартам, идентификация слабых мест,
+      документация результатов: результаты помогают обеспечить надежность конструкций, позволяют выявлять и устранять
+      возможные проблемы.
     </p>
   </section>
 
@@ -193,8 +205,9 @@
     <div class="main__aboutUs-block main__aboutUs-block_type">
       <h2 class="title section__title">Мы - Спецкапиталстрой</h2>
       <p class="section__text">
-        Тут пишем что-то, что поможет понять чем мы занимаемся, почему мы классные, единсвенные и неповторимые. Возможно
-        что-то еще привлекающее и удерживающее внимание.
+        Мы проводим комплексные испытания строительных конструкций, используя новейшие технологии и методы анализа. Наша
+        цель – подтвердить соответствие ваших проектов всем необходимым стандартам и требованиям, обеспечивая их
+        долговечность и безопасность.
       </p>
     </div>
     <div class="main__aboutUs-content">

@@ -1,0 +1,304 @@
+@media screen and (max-width: 560px) {
+  :root {
+    --padding-main: 30px;
+  }
+  
+  .header-navigation {
+    height: 74px;
+    /*padding-inline: 30px;*/
+  }
+  
+  .main-text > p {
+    display: none;
+  }
+  
+  .main__header {
+    height: 480px;
+    /*padding-inline: 30px;*/
+  }
+  
+  .navigation {
+    display: none;
+  }
+  
+  .header__content {
+    top: 132px;
+    align-items: center;
+  }
+  
+  .header__title {
+    font-size: 24px;
+  }
+  
+  .header__text {
+    width: auto;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+  }
+  
+  /*.counter {*/
+  /*  display: none;*/
+  /*}*/
+  
+  /*.slogan {*/
+  /*  position: absolute;*/
+  /*  display: block;*/
+  /*  padding: 20px;*/
+  /*  top: -115px;*/
+  /*  background-image: url(./image/customers.png);*/
+  /*  font-family: "Roboto Light", sans-serif;*/
+  /*  font-size: 14px;*/
+  /*  font-weight: 400;*/
+  /*  line-height: 21px;*/
+  /*  text-align: center;*/
+  /*  color: #FFFFFF;*/
+  /*}*/
+  
+  .main {
+    gap: 50px;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .type-test {
+    gap: 30px;
+  }
+  
+  .type-test__info {
+    gap: 15px;
+  }
+  
+  .section__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .block-type-test {
+    overflow: hidden;
+  }
+  
+  .type-test__cards {
+    padding-inline: var(--padding-main);
+    grid-template-columns: repeat(4, 100%);
+    gap: 10px;
+  }
+  
+  .card {
+    background-color: var(--black_80);
+    padding-inline: 9px;
+  }
+  
+  .card__inform > .card__text, .card__button {
+    opacity: 1;
+  }
+  
+  .wrapper__card {
+    /*width: calc(100vw - 60px);*/
+  }
+  
+  .card__title {
+    font-size: 16px;
+  }
+  
+  .card__text {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .block-buttons {
+    display: none;
+  }
+  
+  .section__title {
+    line-height: 36px;
+  }
+  
+  .slider {
+    padding-inline: 30px;
+  }
+  
+  .slider-object {
+    padding-inline: var(--padding-main);
+    left: 0;
+    gap: 10px;
+  }
+  
+  .block-photo {
+    width: calc(100vw - 60px);
+  }
+  
+  .large_block {
+    width: 100%;
+  }
+  
+  .small_block {
+    width: 100%;
+  }
+  
+  .photo {
+    height: 300px;
+    background-size: 100%;
+    background-position: center;
+  }
+  
+  .slider-content {
+    /*height: 387px;*/
+  }
+  
+  .slider {
+    height: 100%;
+  }
+  
+  .slider__block {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .block-page {
+    width: 100%;
+  }
+  
+  .photo_name {
+    font-size: 16px;
+  }
+  
+  .photo_description {
+    font-size: 14px;
+  }
+  
+  .section__logo-company {
+    gap: 20px;
+    height: 106px;
+  }
+  
+  .block__logo-company {
+    align-items: center;
+    padding: 16px 20px;
+  }
+  
+  .block__logo-company > img {
+    height: 50px;
+    width: 60px;
+  }
+  
+  .main__aboutUs-block {
+    gap: 15px;
+  }
+  
+  .main__aboutUs-block_main {
+    padding-top: 135px;
+  }
+  
+  .postcard__text {
+    opacity: 1;
+  }
+  
+  .block-cards {
+    grid-template-columns: repeat(3, 100%);
+    gap: 10px;
+    height: auto;
+  }
+  
+  .wrapper__postcard {
+    height: auto;
+  }
+  
+  .postcard {
+    padding: 40px 10px;
+  }
+  
+  .bg__card > :before {
+    background-color: var(--black_80);
+  }
+  
+  .postcard__icon {
+    margin-bottom: 0;
+  }
+  
+  .postcard__title {
+    font-size: 16px;
+  }
+  
+  .postcard__text {
+    font-size: 14px;
+  }
+  
+  .main__aboutUs-block_main {
+    height: 570px;
+  }
+  
+  .main__aboutUs-content {
+    gap: 30px;
+  }
+  
+  .block-cards-wrapper {
+    top: -40%;
+    overflow: hidden;
+  }
+  
+  .main__aboutUs {
+    margin-top: 150px;
+    gap: 15px;
+  }
+  
+  .main__aboutUs-inform {
+    font-size: 16px;
+  }
+  
+  .main__aboutUs-contact {
+    font-size: 14px;
+  }
+  
+  .subpage-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .subpage-buttons {
+    margin-bottom: 100px;
+  }
+  
+  .footer {
+    padding-block: 30px;
+  }
+  
+  .footer__content {
+    flex-direction: column-reverse;
+  }
+  
+  .main-text, .footer-link, .footer-sublink {
+    font-size: 14px;
+  }
+  
+  .main-subtext, .footer__subtitle, .footer__text, .footer__subtext {
+    font-size: 12px;
+  }
+  
+  .footer-arrow {
+    right: 30px;
+  }
+  
+  .footer__subtitle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-navigation__li {
+    margin-bottom: 10px;
+  }
+  
+  .footer__block {
+    width: auto;
+  }
+  
+  .footer-navigation__list {
+    margin-bottom: 0;
+  }
+  
+  .button-dark {
+    max-width: 100%;
+  }
+}
