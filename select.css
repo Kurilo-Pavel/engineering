@@ -90,6 +90,26 @@
 .select_default[data-value="check"] {
   color: rgba(7, 7, 7, 1);
 }
-.select_error{
+
+.select_error {
   bottom: -21px;
+}
+
+@media screen and (max-width: 560px) {
+  @keyframes open__drop {
+    from {
+      height: 0;
+    }
+    to {
+      height: 150px;
+    }
+  }
+  @keyframes close__drop {
+    from {
+      height: 150px;
+    }
+    to {
+      height: 0;
+    }
+  }
 }

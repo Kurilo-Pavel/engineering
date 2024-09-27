@@ -17,7 +17,7 @@
     <div class="header__contact">
       <a href="./" class="main-text">
         <img class="header__logo" src="./image/logo_white.png" alt="Логотип">
-        Спецкапиталстрой
+        <p>Спецкапиталстрой</p>
       </a>
       <div class="phone">
         <img src="./image/icons/phone.svg" alt="phone">
@@ -61,7 +61,7 @@
     <div class="header__contact">
       <a href="./" class="main-text color_black">
         <img class="header__logo" src="./image/logo_blue.png" alt="Логотип">
-        Спецкапиталстрой
+        <p>Спецкапиталстрой</p>
       </a>
       <div class="phone">
         <img src="./image/icons/black_phone.svg" alt="phone">
@@ -191,11 +191,13 @@
   <button class="button header__button" onclick="clickCertificate()">Назад</button>
 </div>
 
-<section class="aboutUs-gallery">
-  <span class="aboutUs-photo"></span>
-  <span class="aboutUs-photo"></span>
-  <span class="aboutUs-photo"></span>
-  <span class="aboutUs-photo"></span>
+<section class="block-type-test">
+  <div class="type-test__cards" data-slider="true">
+    <span class="aboutUs-photo"></span>
+    <span class="aboutUs-photo"></span>
+    <span class="aboutUs-photo"></span>
+    <span class="aboutUs-photo"></span>
+  </div>
 </section>
 
 <section class="aboutUs-quality">
@@ -231,8 +233,10 @@
       </div>
     </div>
     <div class="aboutUs-images">
-      <img src="" alt="photo">
-      <img src="" alt="photo">
+      <div class="aboutUs-images__wrapper" data-slider="true">
+        <img src="image/about_us_1.png" alt="photo">
+        <img src="image/about_us_2.png" alt="photo">
+      </div>
     </div>
   </div>
 </section>
@@ -367,4 +371,5 @@
 </body>
 <script src="./scripts/script.js"></script>
 <script src="./scripts/aboutUs.js"></script>
+<script src="./scripts/mainSlider.js"></script>
 </html>

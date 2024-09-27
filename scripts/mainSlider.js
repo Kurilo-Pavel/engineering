@@ -166,6 +166,7 @@ for (let el of document.querySelectorAll("div[data-slider]")) {
   };
 
   cardBlock.addEventListener("touchstart", (event) => {
+    console.log(cardWidth)
     cardBlock.style.transition = "0s";
     if (cardBlock.style.left) {
       x = parseInt(cardBlock.style.left);
@@ -179,6 +180,7 @@ for (let el of document.querySelectorAll("div[data-slider]")) {
   });
 
   cardBlock.addEventListener("touchend", (event) => {
+
     if (mouseValue + 100 < mouseUpdate(event.changedTouches[0])) {
       if (x) {
         showBlock(cardBlock.children, Math.round(-((x + (cardWidth + gap)) / (cardWidth + gap))));

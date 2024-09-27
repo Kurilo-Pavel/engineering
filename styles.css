@@ -305,6 +305,10 @@ ul {
   gap: 30px;
 }
 
+.block-type-test-black {
+  background: var(--black_80);
+}
+
 .column_2 {
   grid-column-start: 2;
 }
@@ -347,10 +351,14 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  height: 514px;
   justify-content: space-between;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.type-test__cards-special {
+  grid-template-columns: repeat(4, 242px);
+  justify-content: center;
 }
 
 .device__block {
@@ -493,6 +501,7 @@ ul {
 
 .wrapper__card {
   width: 100%;
+  height: 514px;
   /*background: rgba(0, 0, 0, 0.5);*/
   transition: background-color, 1s;
 }
@@ -1237,7 +1246,7 @@ ul {
 }
 
 .aboutUs-block__field {
-  background: var(--lightGrey);
+  background-image: url("image/our_company.png");
   left: -100%;
   transition: 1s 0.5s left;
 }
@@ -1330,7 +1339,6 @@ ul {
 }
 
 .aboutUs-quality {
-  top: 18px;
   overflow: hidden;
 }
 
@@ -1378,11 +1386,16 @@ ul {
 }
 
 .aboutUs-images {
+  left: 100%;
+  transition: 1s 1.5s left;
+  overflow: hidden;
+}
+
+.aboutUs-images__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  left: 100%;
-  transition: 1s 1.5s left;
+  
 }
 
 .aboutUs-images > img {
@@ -2671,4 +2684,8 @@ ul {
 @media (max-width: 1180px) {
   :root {
   }
+}
+
+.main__wrapper {
+  display: none;
 }

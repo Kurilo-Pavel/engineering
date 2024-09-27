@@ -61,10 +61,10 @@ let navOldTop = 0;
 const handleScroll = () => {
   const burger = document.getElementById("burger");
   const burgerDouble = document.getElementById("burger-double");
-  // if (burger.checked || burgerDouble) {
-  //   burger.checked = false;
-  //   burgerDouble.checked = false;
-  // }
+  if (burger.checked || burgerDouble) {
+    burger.checked = false;
+    burgerDouble.checked = false;
+  }
   const navigation = document.getElementsByClassName("scroll__header")[0];
   let navCurTop = window.scrollY;
   const heightHeader = document.getElementsByClassName("header")[0].getBoundingClientRect().height;

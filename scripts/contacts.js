@@ -117,7 +117,6 @@ const handleChange = (el) => {
 const handleDrop = (e) => {
   const children = e.children;
   const isActive = e.dataset.status === "open";
-  console.log(isActive)
   let image, drop, value, error;
 
   for (child of children) {
@@ -213,8 +212,13 @@ const handleSelectFile = (el) => {
 const handleSend = async () => {
   if (!errors.name && !errors.email && !errors.topic && !errors.message) {
     const formData = new FormData();
-    formData.append("name", data.name)
-    formData.append("doc", data.file)
+    formData.append("name", data.name);
+    formData.append("doc", data.file);
+    formData.append("message",data.message);
+    formData.append("topic",data.topic);
+    formData.append("phone",data.phone);
+    formData.append("email",data.email);
+    console.log(data)
     const response = await fetch("https://general-server-zhp1.onrender.com/engineering/message", {
       method: "POST",
       body: formData
@@ -223,6 +227,7 @@ const handleSend = async () => {
     if (result.status === "success") {
       const modal = document.getElementsByClassName("modal")[0];
       modal.classList.add("open__modal");
+      console.log(modal)
     }
   } else {
     const errorsEl = document.getElementsByClassName("input-error");

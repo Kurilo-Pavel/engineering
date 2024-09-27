@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
@@ -14,7 +16,7 @@
     <div class="header__contact">
       <a href="./" class="main-text">
         <img class="header__logo" src="./image/logo_white.png" alt="Логотип">
-        Спецкапиталстрой
+        <p>Спецкапиталстрой</p>
       </a>
       <div class="phone">
         <img src="./image/icons/phone.svg" alt="phone">
@@ -58,7 +60,7 @@
     <div class="header__contact">
       <a href="./" class="main-text color_black">
         <img class="header__logo" src="./image/logo_blue.png" alt="Логотип">
-        Спецкапиталстрой
+        <p>Спецкапиталстрой</p>
       </a>
       <div class="phone">
         <img src="./image/icons/black_phone.svg" alt="phone">
@@ -71,18 +73,24 @@
     </label>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__li scroll__navigation-li"><a class="navigation__link color_black" href="./aboutUs.html">О
-          нас</a></li>
+        <li class="navigation__li scroll__navigation-li">
+          <a class="navigation__link color_black" href="./aboutUs.html">О нас</a>
+        </li>
         <li class="navigation__li scroll__navigation-li">
           <a href="./typeTests.html" class="navigation__link color_black">виды испытаний</a>
           <span class="nav-wrapper"></span>
           <ul class="navigation-sublist scroll__navigation-sublist">
-            <li class=""><a class="navigation-sublink" href="./impulse.html">Метод ударного импульса</a>
+            <li class="">
+              <a class="navigation-sublink" href="./impulse.html">Метод ударного импульса</a>
             </li>
-            <li class=""><a class="navigation-sublink" href="./chip-off.html">Метод отрыва со скалыванием</a></li>
-            <li class=""><a class="navigation-sublink" href="./pullout.html">
-              Испытания усилия вырыва анкерного устройства и крепежного элемента
-            </a></li>
+            <li class="">
+              <a class="navigation-sublink" href="./chip-off.html">Метод отрыва со скалыванием</a>
+            </li>
+            <li class="">
+              <a class="navigation-sublink" href="./pullout.html">
+                Испытания усилия вырыва анкерного устройства и крепежного элемента
+              </a>
+            </li>
             <li class="">
               <a class="navigation-sublink" href="./compaction.html">Коэффициент уплотнения</a>
             </li>
@@ -193,8 +201,8 @@
     </p>
   </section>
 
-  <section class="section">
-    <div class="block-cards">
+  <section class="section block-type-test">
+    <div class="block-cards" data-slider="true">
       <img class="type-test__card" src="" alt="photo">
       <img class="type-test__card" src="" alt="photo">
       <img class="type-test__card" src="" alt="photo">
@@ -211,58 +219,59 @@
       </p>
     </div>
     <div class="main__aboutUs-content">
-      <div class="block-cards main__aboutUs-cards">
-        <div class="wrapper__postcard bg__card">
-          <div class="postcard bg__tests">
-            <div class="postcard__inform">
-              <img class="postcard__icon" src="./image/icons/star.svg" alt="icon">
-              <span class="postcard__title">Точность испытаний</span>
-              <ul class="postcard__text card__list">
-                <li>
-                  Новое и качественное оборудование, а также большой опыт в работе, позволяют нам точно и качественно
-                  выполнить все виды испытаний.
-                </li>
-              </ul>
+      <div class="block-cards-wrapper">
+        <div class="block-cards main__aboutUs-cards" data-slider="true">
+          <div class="wrapper__postcard bg__card">
+            <div class="postcard bg__tests">
+              <div class="postcard__inform">
+                <img class="postcard__icon" src="./image/icons/star.svg" alt="icon">
+                <span class="postcard__title">Точность испытаний</span>
+                <ul class="postcard__text card__list">
+                  <li>
+                    Новое и качественное оборудование, а также большой опыт в работе, позволяют нам точно и качественно
+                    выполнить все виды испытаний.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="wrapper__postcard bg__card">
-          <div class="postcard bg__conditions">
-            <div class="postcard__inform">
-              <img class="postcard__icon" src="./image/icons/heart.svg" alt="icon">
-              <span class="postcard__title">Удобные и комфортные условия для заказчика</span>
-              <ul class="postcard__text card__list">
-                <li>
-                  Быстрые сроки проведения испытаний;
-                </li>
-                <li>
-                  При получении заявки выезд, оформление и выдача протокола в течение суток;
-                </li>
-                <li>
-                  Приятная стоимость.
-                </li>
-              </ul>
+          <div class="wrapper__postcard bg__card">
+            <div class="postcard bg__conditions">
+              <div class="postcard__inform">
+                <img class="postcard__icon" src="./image/icons/heart.svg" alt="icon">
+                <span class="postcard__title">Удобные и комфортные условия для заказчика</span>
+                <ul class="postcard__text card__list">
+                  <li>
+                    Быстрые сроки проведения испытаний;
+                  </li>
+                  <li>
+                    При получении заявки выезд, оформление и выдача протокола в течение суток;
+                  </li>
+                  <li>
+                    Приятная стоимость.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="wrapper__postcard bg__card">
-          <div class="postcard bg__travel">
-            <div class="postcard__inform">
-              <img class="postcard__icon" src="./image/icons/point_map.svg" alt="icon">
-              <span class="postcard__title">Выезд в любую точку на строительный объект</span>
-              <ul class="postcard__text card__list">
-                <li>
-                  Выезд на объект по Гродненской области в удобное для вас время.
-                </li>
-              </ul>
+          <div class="wrapper__postcard bg__card">
+            <div class="postcard bg__travel">
+              <div class="postcard__inform">
+                <img class="postcard__icon" src="./image/icons/point_map.svg" alt="icon">
+                <span class="postcard__title">Выезд в любую точку на строительный объект</span>
+                <ul class="postcard__text card__list">
+                  <li>
+                    Выезд на объект по Гродненской области в удобное для вас время.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="main__aboutUs-wrapper"></div>
       <div class="main__aboutUs">
         <p class="main__aboutUs-inform">
-          Написать что-то о качестве и надежности, о наших возможностях.
+          Точные испытания для безупречных строительных решений.
         </p>
         <p class="main__aboutUs-contact">
           Чтобы связаться с нами, можно заполнить форму обратной связи на сайте или обратиться по указанным контактам.
@@ -272,7 +281,9 @@
         <a href="./contacts.html" class="button button-dark">Оставить заявку</a>
         <a href="./aboutUs.html" class="button button-slider subpage-button-contact">О нас</a>
       </div>
+      <span class="main__wrapper"></span>
     </div>
+
   </section>
 </main>
 <footer class="footer">
@@ -396,4 +407,5 @@
 
 </body>
 <script src="./scripts/script.js"></script>
+<script src="./scripts/mainSlider.js"></script>
 </html>

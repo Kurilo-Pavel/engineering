@@ -17,7 +17,7 @@
     <div class="header__contact">
       <a href="./" class="main-text">
         <img class="header__logo" src="./image/logo_white.png" alt="Логотип">
-        Спецкапиталстрой
+        <p>Спецкапиталстрой</p>
       </a>
       <div class="phone">
         <img src="./image/icons/phone.svg" alt="phone">
@@ -30,7 +30,9 @@
     </label>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__li"><a class="navigation__link" href="./aboutUs.html">О нас</a></li>
+        <li class="navigation__li">
+          <a class="navigation__link" href="./aboutUs.html">О нас</a>
+        </li>
         <li class="navigation__li">
           <a href="./typeTests.html" class="navigation__link">виды испытаний</a>
           <ul class="navigation-sublist">
@@ -61,7 +63,7 @@
     <div class="header__contact">
       <a href="./" class="main-text color_black">
         <img class="header__logo" src="./image/logo_blue.png" alt="Логотип">
-        Спецкапиталстрой
+        <p>Спецкапиталстрой</p>
       </a>
       <div class="phone">
         <img src="./image/icons/black_phone.svg" alt="phone">
@@ -117,12 +119,12 @@
     испытаний и отправить на электронную почту
     <a href="mailto:speckapitalstroi@gmail.com">speckapitalstroi@gmail.com</a>
   </p>
-  <p class="subpage-description contact__description">
-    Документ, прилагаемые к заявке на проведение испытаний, должен быть завереным
-    подписью и печатью (при наличии) заявителя.<br> Заявитель несёт ответственность за достоверность представленных
-    документов.
-  </p>
-  <button class="button button-dark">Скачать документ</button>
+<!--  <p class="subpage-description contact__description">-->
+<!--    Документ, прилагаемые к заявке на проведение испытаний, должен быть завереным-->
+<!--    подписью и печатью (при наличии) заявителя.<br> Заявитель несёт ответственность за достоверность представленных-->
+<!--    документов.-->
+<!--  </p>-->
+<!--  <button class="button button-dark">Скачать документ</button>-->
 </section>
 <section class="section">
   <div class="contact-content">
@@ -167,12 +169,12 @@
       >
         <img src="./image/icons/arrow_close.svg" alt="close" class="select__arrow">
         <p class="select__value select_default" data-value="default" id="value">Тема вашего обращения <span>*</span></p>
+        <span class="input-error select_error" data-name="topic"></span>
         <ul class="select__drop">
           <li class="select__option" onclick="handleCheck(this)">Составить договор на испытание</li>
           <li class="select__option" onclick="handleCheck(this)">Узнать стоимость</li>
           <li class="select__option" onclick="handleCheck(this)">Узнать возможность проведения испытаний</li>
         </ul>
-        <span class="input-error select_error" data-name="topic"></span>
       </div>
 
       <label class="contact-label" for="message">
@@ -188,24 +190,24 @@
         ></textarea>
         <span class="input-error" data-name="message"></span>
       </label>
-      <label class="contact-label" for="file">
-        <input
-          type="file"
-          id="file"
-          class="file__input"
-          onchange="handleSelectFile(this)"
-        >
-        <img
-          src="./image/icons/clip.svg"
-          class="input__icon"
-          alt="file"
-        >
-        <input
-          type="text"
-          class="contact-field contact-input file_placeholder"
-          placeholder="Добавьте сюда файл">
-        <span class="input-error"></span>
-      </label>
+<!--      <label class="contact-label" for="file">-->
+<!--        <input-->
+<!--          type="file"-->
+<!--          id="file"-->
+<!--          class="file__input"-->
+<!--          onchange="handleSelectFile(this)"-->
+<!--        >-->
+<!--        <img-->
+<!--          src="./image/icons/clip.svg"-->
+<!--          class="input__icon"-->
+<!--          alt="file"-->
+<!--        >-->
+<!--        <input-->
+<!--          type="text"-->
+<!--          class="contact-field contact-input file_placeholder"-->
+<!--          placeholder="Добавьте сюда файл">-->
+<!--        <span class="input-error"></span>-->
+<!--      </label>-->
       <!--      <div class="contact-block">-->
       <!--        <label>-->
       <!--          <input class="contact-radio" type="radio" name="user" checked>-->
@@ -218,7 +220,9 @@
       <!--      </div>-->
       <button
         type="button"
-        class="button button-dark" onclick="handleSend()">Отправить
+        class="button button-dark"
+        onclick="handleSend()"
+      >Отправить
       </button>
     </form>
     <div class="contacts-data">
@@ -232,7 +236,10 @@
       </a>
       <p class="footer-link contact-link contact-address">
         <img src="./image/icons/point_map_blue.png" alt="map">
-        г. Гродно, ул. Карла Маркса,<br> д.31-1, оф.416
+<!--        г. Гродно, ул. Карла Маркса,<br> д.31-1, оф.416-->
+
+        ул. Карла Маркса, д. 31-1, оф. 416, <br>
+        230000, г. Гродно, Гродненская область
       </p>
       <p class="footer-link contact-link">
         <img src="./image/icons/time_blue.png" alt="time">
@@ -375,5 +382,4 @@
 </body>
 <script src="./scripts/script.js"></script>
 <script src="./scripts/contacts.js"></script>
-
 </html>
