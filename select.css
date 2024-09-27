@@ -55,7 +55,7 @@
     height: 0;
   }
   to {
-    height: 120px;
+    height: 125px;
   }
 }
 
@@ -65,7 +65,7 @@
 
 @keyframes close__drop {
   from {
-    height: 120px;
+    height: 125px;
   }
   to {
     height: 0;
