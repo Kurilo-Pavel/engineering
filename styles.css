@@ -306,7 +306,21 @@ ul {
 }
 
 .block-type-test-black {
-  background: var(--black_80);
+  /*background: var(--black_80);*/
+  background-image: url("image/type-test_bg.png");
+}
+
+.block-type-test-black:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--black_70);
 }
 
 .column_2 {
@@ -352,8 +366,8 @@ ul {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   justify-content: space-between;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
 }
 
 .type-test__cards-special {

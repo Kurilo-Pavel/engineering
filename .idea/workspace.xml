@@ -3,22 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="10c6ac92-d005-4ae1-a261-3513d5da9ef8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chip-off.html" beforeDir="false" afterPath="$PROJECT_DIR$/chip-off.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/compaction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engineering_services.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/impulse.html" beforeDir="false" afterPath="$PROJECT_DIR$/impulse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instruments.html" beforeDir="false" afterPath="$PROJECT_DIR$/instruments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laboratory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourObjects.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pullout.html" beforeDir="false" afterPath="$PROJECT_DIR$/pullout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supervision.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/typeTests.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +134,8 @@
       <workItem from="1727172681098" duration="9632000" />
       <workItem from="1727259338293" duration="11836000" />
       <workItem from="1727427987880" duration="7794000" />
-      <workItem from="1727856278262" duration="10483000" />
+      <workItem from="1727856278262" duration="11200000" />
+      <workItem from="1727888816313" duration="648000" />
     </task>
     <servers />
   </component>
