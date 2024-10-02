@@ -388,13 +388,16 @@ ul {
 
 .slogan {
   position: absolute;
-  display: block;
-  padding: 20px;
-  top: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+  top: -140px;
   width: 100%;
+  height: 144px;
   background-image: url(./image/customers.png);
-  font-family: "Roboto Light", sans-serif;
-  font-size: 14px;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 24px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
@@ -404,7 +407,7 @@ ul {
 .block-cards-wrapper {
   position: absolute;
   /*left: calc(0px - var(--padding-main));*/
-  top: -50%;
+  top: -40%;
   /*width: 100vw;*/
   /*padding-inline: var(--padding-main);*/
   z-index: 2;
@@ -506,6 +509,13 @@ ul {
   transition: background-color, 1s;
 }
 
+.card__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .wrapper__card::before {
   content: '';
   display: block;
@@ -532,8 +542,8 @@ ul {
   padding: 60px 30px;
 }
 
-.bg__services {
-  background: url("./image/services.png") right;
+.bg__impulse {
+  background: url("./image/impulse.jpg") right;
   background-size: cover;
 }
 
@@ -905,12 +915,12 @@ ul {
 }
 
 .main__aboutUs-block_main {
-  height: 787px;
+  height: 880px;
   padding-top: 240px;
 }
 
 .main__aboutUs-block_type {
-  height: 560px;
+  height: 645px;
 }
 
 .main__aboutUs-text {
@@ -1024,6 +1034,7 @@ ul {
   flex-direction: column;
   justify-content: end;
   gap: 60px;
+  height: 700px;
 }
 
 .main__aboutUs {
@@ -1174,7 +1185,7 @@ ul {
   gap: 5px;
   width: 100%;
   height: 60px;
-  background: rgba(100, 100, 100, 1);
+  background: #4A4A4A;
   top: 100%;
   left: 0;
 }
@@ -1249,6 +1260,9 @@ ul {
   background-image: url("image/our_company.png");
   left: -100%;
   transition: 1s 0.5s left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .aboutUs-block__content {
@@ -1389,13 +1403,15 @@ ul {
   left: 100%;
   transition: 1s 1.5s left;
   overflow: hidden;
+  background-image: url("image/about_us_1.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .aboutUs-images__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  
 }
 
 .aboutUs-images > img {
@@ -2422,8 +2438,8 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 240px;
-  height: 370px;
-  padding-block: 30px;
+  height: 450px;
+  padding-block: 60px 80px;
 }
 
 .type__info {
@@ -2540,7 +2556,7 @@ ul {
 }
 
 .test__info {
-  height: 237px;
+  /*height: 237px;*/
   padding-block: 60px;
   background-image: url("./image/bg_test_info.png");
   background-size: cover;

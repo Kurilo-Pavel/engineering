@@ -1,4 +1,4 @@
-@media screen and (max-width: 560px) {
+@media  (max-width: 560px) {
   :root {
     --padding-main: 30px;
   }
@@ -81,7 +81,11 @@
     text-align: center;
     line-height: 21px;
   }
-  
+  .slogan{
+    height: 80px;
+    top: -110px;
+    font-size: 14px;
+  }
   /*.counter {*/
   /*  display: none;*/
   /*}*/
@@ -290,11 +294,11 @@
   
   .main__aboutUs-content {
     gap: 30px;
-    height: 500px;
+    height: 550px;
   }
   
   .block-cards-wrapper {
-    top: -40%;
+    top: -27%;
     width: 100vw;
     left: calc(0px - var(--padding-main));
     overflow: hidden;
@@ -419,9 +423,9 @@
   }
   
   .aboutUs-images {
-    width: 100vw;
     margin-top: 65px;
     transition: none;
+    height: 300px;
   }
   
   .aboutUs-images__wrapper {
@@ -514,7 +518,7 @@
   }
   
   .main__aboutUs-block_type {
-    height: 510px;
+    height: 420px;
   }
   
   .main__wrapper {
