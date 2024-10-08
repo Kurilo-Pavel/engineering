@@ -157,6 +157,7 @@ for (let el of document.querySelectorAll("div[data-slider]")) {
   let x = 0;
   const gap = parseInt(getComputedStyle(cardBlock).getPropertyValue("gap"));
   const cardWidth = cardBlock.children[0].getBoundingClientRect().width;
+  // console.log(cardWidth)
   const cardPos = cardBlock.getBoundingClientRect().left
   let start = 0;
   let mouseValue = 0;
@@ -166,7 +167,7 @@ for (let el of document.querySelectorAll("div[data-slider]")) {
   };
 
   cardBlock.addEventListener("touchstart", (event) => {
-    console.log(cardWidth)
+    // console.log(cardWidth)
     cardBlock.style.transition = "0s";
     if (cardBlock.style.left) {
       x = parseInt(cardBlock.style.left);
@@ -180,6 +181,7 @@ for (let el of document.querySelectorAll("div[data-slider]")) {
   });
 
   cardBlock.addEventListener("touchend", (event) => {
+    // console.log(x)
 
     if (mouseValue + 100 < mouseUpdate(event.changedTouches[0])) {
       if (x) {
