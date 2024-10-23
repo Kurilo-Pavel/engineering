@@ -128,9 +128,13 @@
 </section>
 <section class="section">
   <div class="contact-content">
-    <form class="contact-form" name="userRequest" method="dialog">
+    <form
+      id="form"
+      class="contact-form"
+      name="userRequest"
+    >
       <label class="contact-label" for="name">
-        <p class="placeholder" data-value="empty">Имя <span>*</span></p>
+        <p class="placeholder" data-value="empty">Наименование организации <span>*</span></p>
         <input
           class="contact-field contact-input"
           type="text"
@@ -161,21 +165,21 @@
           onblur="handlePhone(this)"
         >
       </label>
-      <div
-        class="select"
-        data-status="close"
-        onclick="handleDrop(this)"
-        onblur="closeDrop(event)"
-      >
-        <img src="./image/icons/arrow_close.svg" alt="close" class="select__arrow">
-        <p class="select__value select_default" data-value="default" id="value">Тема вашего обращения <span>*</span></p>
-        <span class="input-error select_error" data-name="topic"></span>
-        <ul class="select__drop">
-          <li class="select__option" onclick="handleCheck(this)">Составить договор на испытание</li>
-          <li class="select__option" onclick="handleCheck(this)">Узнать стоимость</li>
-          <li class="select__option" onclick="handleCheck(this)">Узнать возможность проведения испытаний</li>
-        </ul>
-      </div>
+<!--      <div-->
+<!--        class="select"-->
+<!--        data-status="close"-->
+<!--        onclick="handleDrop(this)"-->
+<!--        onblur="closeDrop(event)"-->
+<!--      >-->
+<!--        <img src="./image/icons/arrow_close.svg" alt="close" class="select__arrow">-->
+<!--        <p class="select__value select_default" data-value="default" id="value">Тема вашего обращения <span>*</span></p>-->
+<!--        <span class="input-error select_error" data-name="topic"></span>-->
+<!--        <ul class="select__drop">-->
+<!--          <li class="select__option" onclick="handleCheck(this)">Составить договор на испытание</li>-->
+<!--          <li class="select__option" onclick="handleCheck(this)">Узнать стоимость</li>-->
+<!--          <li class="select__option" onclick="handleCheck(this)">Узнать возможность проведения испытаний</li>-->
+<!--        </ul>-->
+<!--      </div>-->
 
       <label class="contact-label" for="message">
         <p class="placeholder" data-value="empty">Введите текст <span>*</span></p>

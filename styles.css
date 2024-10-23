@@ -309,6 +309,8 @@ ul {
 .block-type-test-black {
   /*background: var(--black_80);*/
   background-image: url("image/type-test_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .block-type-test-black:before {
@@ -360,6 +362,7 @@ ul {
   flex-direction: column;
   gap: 15px;
   max-width: 697px;
+  padding-bottom: 30px;
 }
 
 .type-test__cards {
@@ -1710,7 +1713,7 @@ ul {
 }
 
 .contact-address {
-  line-height: 23px;
+  line-height: 30px;
 }
 
 .contact-block {
@@ -2187,6 +2190,7 @@ ul {
   color: var(--white);
   border: 1px solid var(--white);
   background: none;
+  margin-top: 30px;
 }
 
 .button__secondary:hover {

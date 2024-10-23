@@ -31,15 +31,13 @@ let data = {
   email: "",
   message: "",
   phone: "",
-  topic: ""
 };
 
 const errors = {
   name: "Заполните поле",
   email: "Заполните поле",
   message: "Заполните поле",
-  file: "",
-  topic: "Заполните поле"
+  file: ""
 };
 
 const checkValue = (value, reg) => {
@@ -79,6 +77,7 @@ const handleEmail = (e) => {
     errors.email = "";
   }
 };
+
 const pushPhone = (el) => {
   if (el.value === "") {
     el.value = "+375";
@@ -114,117 +113,120 @@ const handleChange = (el) => {
   }
 };
 
-const handleDrop = (e) => {
-  const children = e.children;
-  const isActive = e.dataset.status === "open";
-  let image, drop, value, error;
+// const handleDrop = (e) => {
+//   const children = e.children;
+//   const isActive = e.dataset.status === "open";
+//   let image, drop, value, error;
+//
+//   for (child of children) {
+//     if (child.tagName === "IMG") {
+//       image = child;
+//     }
+//     if (child.tagName === "UL") {
+//       drop = child;
+//     }
+//     if (child.tagName === "P") {
+//       value = child;
+//     }
+//     if (child.tagName === "SPAN") {
+//       error = child;
+//     }
+//   }
+//
+//   if (!isActive) {
+//     e.dataset.status = "open";
+//     image.style.transform = "rotate(180deg)";
+//     drop.classList.remove("select__drop_close");
+//     drop.classList.add("select__drop_open");
+//     // window.addEventListener("scroll", closeDrop, {passive: true});
+//   } else {
+//     image.style.transform = "rotate(0)";
+//     e.dataset.status = "close";
+//     drop.classList.remove("select__drop_open");
+//     drop.classList.add("select__drop_close");
+//   }
+//   if (value.dataset.value === "default" && e.dataset.status === "close") {
+//     value.style.borderColor = "red";
+//     errors.topic = "Заполните поле";
+//     error.innerText = "Заполните поле";
+//   } else {
+//     value.style.borderColor = "black";
+//     error.innerText = "";
+//     errors.topic = "";
+//   }
+// };
 
-  for (child of children) {
-    if (child.tagName === "IMG") {
-      image = child;
-    }
-    if (child.tagName === "UL") {
-      drop = child;
-    }
-    if (child.tagName === "P") {
-      value = child;
-    }
-    if (child.tagName === "SPAN") {
-      error = child;
-    }
-  }
+// const handleCheck = (el) => {
+//   const value = document.getElementById("value");
+//   value.dataset.value = "check";
+//   value.innerText = el.innerText;
+//   data.topic = el.innerText;
+// };
 
-  if (!isActive) {
-    e.dataset.status = "open";
-    image.style.transform = "rotate(180deg)";
-    drop.classList.remove("select__drop_close");
-    drop.classList.add("select__drop_open");
-    // window.addEventListener("scroll", closeDrop, {passive: true});
-  } else {
-    image.style.transform = "rotate(0)";
-    e.dataset.status = "close";
-    drop.classList.remove("select__drop_open");
-    drop.classList.add("select__drop_close");
-  }
-  if (value.dataset.value === "default" && e.dataset.status === "close") {
-    value.style.borderColor = "red";
-    errors.topic = "Заполните поле";
-    error.innerText = "Заполните поле";
-  } else {
-    value.style.borderColor = "black";
-    error.innerText = "";
-    errors.topic = "";
-  }
-};
+// const closeDrop = (e) => {
+//   const select = document.getElementsByClassName("select__value")[0];
+//   const drop = document.getElementsByClassName("select__drop")[0];
+//   const image = document.getElementsByClassName("select__arrow")[0];
+//   const error = document.getElementsByClassName("input-error")[0];
+//   if (e.target != select && drop.className.includes("open")) {
+//     console.log(drop.parentElement.dataset.status)
+//     drop.parentElement.dataset.status = "close";
+//     drop.classList.remove("select__drop_open");
+//     drop.classList.add("select__drop_close");
+//     image.style.transform = "rotate(0)";
+//     if (select.dataset.value === "default") {
+//       drop.nextElementSibling.innerText = "Заполните поле";
+//       select.style.borderColor = "red";
+//       errors.topic = "Заполните поле";
+//     }
+//   }
+//   // window.removeEventListener("scroll", closeDrop);
+// };
+// window.addEventListener("click", (event) => closeDrop(event), {passive: true});
 
-const handleCheck = (el) => {
-  const value = document.getElementById("value");
-  value.dataset.value = "check";
-  value.innerText = el.innerText;
-  data.topic = el.innerText;
-};
-
-const closeDrop = (e) => {
-  const select = document.getElementsByClassName("select__value")[0];
-  const drop = document.getElementsByClassName("select__drop")[0];
-  const image = document.getElementsByClassName("select__arrow")[0];
-  const error = document.getElementsByClassName("input-error")[0];
-  if (e.target != select && drop.className.includes("open")) {
-    console.log(drop.parentElement.dataset.status)
-    drop.parentElement.dataset.status = "close";
-    drop.classList.remove("select__drop_open");
-    drop.classList.add("select__drop_close");
-    image.style.transform = "rotate(0)";
-    if (select.dataset.value === "default") {
-      drop.nextElementSibling.innerText = "Заполните поле";
-      select.style.borderColor = "red";
-      errors.topic = "Заполните поле";
-    }
-  }
-  // window.removeEventListener("scroll", closeDrop);
-};
-window.addEventListener("click", (event) => closeDrop(event), {passive: true});
-
-const handleSelectFile = (el) => {
-  let input, error;
-  for (child of el.parentElement.children) {
-    if (child.className.includes("file_placeholder")) {
-      input = child;
-    }
-    if (child.tagName === "SPAN") {
-      error = child;
-    }
-  }
-  input.value = el.value;
-  if (el.files[0].size > 1000000) {
-    input.style.borderColor = "red";
-    error.innerText = "Размер файла превышает допустимый";
-    errors.file = "Размер файла превышает допустимый";
-
-  } else {
-    input.style.borderColor = "black";
-    error.innerText = "";
-    errors.file = "";
-    data.file = el.files[0];
-  }
-};
+// const handleSelectFile = (el) => {
+//   let input, error;
+//   for (child of el.parentElement.children) {
+//     if (child.className.includes("file_placeholder")) {
+//       input = child;
+//     }
+//     if (child.tagName === "SPAN") {
+//       error = child;
+//     }
+//   }
+//   input.value = el.value;
+//   if (el.files[0].size > 1000000) {
+//     input.style.borderColor = "red";
+//     error.innerText = "Размер файла превышает допустимый";
+//     errors.file = "Размер файла превышает допустимый";
+//
+//   } else {
+//     input.style.borderColor = "black";
+//     error.innerText = "";
+//     errors.file = "";
+//     data.file = el.files[0];
+//   }
+// };
 
 const handleSend = async () => {
   if (!errors.name && !errors.email && !errors.topic && !errors.message) {
     const formData = new FormData();
     formData.append("name", data.name);
     formData.append("doc", data.file);
-    formData.append("message",data.message);
-    formData.append("topic",data.topic);
-    formData.append("phone",data.phone);
-    formData.append("email",data.email);
+    formData.append("message", data.message);
+    // formData.append("topic",data.topic);
+    formData.append("phone", data.phone);
+    formData.append("email", data.email);
     console.log(data)
-    const response = await fetch("https://general-server-zhp1.onrender.com/engineering/message", {
+    const response = await fetch("https://formspree.io/f/xpwzwyeg", {
       method: "POST",
-      body: formData
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
     });
     const result = await response.json();
-    if (result.status === "success") {
+    if (result.ok) {
       const modal = document.getElementsByClassName("modal")[0];
       modal.classList.add("open__modal");
       console.log(modal)
