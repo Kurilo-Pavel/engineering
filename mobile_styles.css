@@ -29,6 +29,10 @@
     background-image: url("image/type_test_header.png");
   }
   
+  .typeTests__header {
+    background-image: url(./image/typeTests_header_mob.png);
+  }
+  
   .instruments__header {
     background-image: url("image/instruments_header_m.png");
   }
@@ -240,6 +244,22 @@
     height: 300px;
     background-size: 100%;
     background-position: center;
+  }
+  
+  .photo1 {
+    background-image: url(./image/photo_1_mob.png);
+  }
+  
+  .photo2 {
+    background-image: url(./image/photo_2_mob.png);
+  }
+  
+  .photo3 {
+    background-image: url(./image/photo_3_mob.png);
+  }
+  
+  .photo4 {
+    background-image: url(./image/photo_4_mob.png);
   }
   
   .slider-content {
