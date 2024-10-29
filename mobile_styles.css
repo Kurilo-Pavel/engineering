@@ -32,16 +32,19 @@
   .instruments__header {
     background-image: url("image/instruments_header_m.png");
   }
-  .contacts__header{
+  
+  .contacts__header {
     background-image: url("image/contacts_header_m.png");
   }
+  
   .header__block-title {
     /* top: 174px; */
     top: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    bottom: 19px;
+    bottom: -25px;
+    justify-content: center;
   }
   
   .aboutUs__header {
@@ -339,8 +342,9 @@
   }
   
   .main__aboutUs {
-    margin-top: 150px;
+    margin-top: 120px;
     gap: 15px;
+    margin-bottom: 15px;
   }
   
   .main__aboutUs-inform {
@@ -414,7 +418,8 @@
   }
   
   .aboutUs-block__content {
-    padding-bottom: 4 opx;
+    padding-bottom: 40px;
+    gap: 15px;
   }
   
   .subpage-text {
@@ -425,8 +430,17 @@
     font-size: 14px;
   }
   
+  .subpage-description__objects {
+    margin-bottom: 15px;
+  }
+  
+  .aboutUs-objects {
+    margin-bottom: 35px;
+  }
+  
   .button-certificate {
     align-self: center;
+    margin-top: 15px;
   }
   
   .aboutUs-photo {
@@ -460,6 +474,7 @@
     margin-top: 65px;
     transition: none;
     height: 300px;
+    background-image: url(image/about_us_mobile.png);
   }
   
   .aboutUs-images__wrapper {
@@ -475,7 +490,7 @@
   }
   
   .protocol__block {
-    height: 165px;
+    height: 150px;
     padding-block: 30px 40px;
     overflow: hidden;
   }
@@ -496,7 +511,7 @@
   
   @keyframes open_protocol {
     from {
-      height: 165px
+      height: 150px
     }
     to {
       height: 680px
@@ -507,7 +522,7 @@
       height: 680px
     }
     to {
-      height: 165px
+      height: 150px
     }
   }
   
@@ -555,6 +570,10 @@
   
   .test__info {
     height: auto;
+    padding-block: 30px 40px;
+    background-image: url(./image/bg_protocol.png);
+    background-size: cover;
+    background-position: center;
   }
   
   .type-test__card {
