@@ -195,6 +195,7 @@
   
   .wrapper__card {
     /*width: calc(100vw - 60px);*/
+    height: 500px;
   }
   
   .wrapper__card::before {
