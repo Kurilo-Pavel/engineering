@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /*.css
+Allow: /*.html
+Sitemap:https: //sc-stroy.by/sitemap.xml
