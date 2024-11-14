@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="fonts.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="mobile_styles.css" rel="stylesheet">
+  <link href="burger_styles.css" rel="stylesheet">
   <title>Not found</title>
 </head>
 <body>
-<h1>Hello world</h1>
+<div class="header-navigation scroll__header visible">
+  <div class="header__contact">
+    <a href="./" class="main-text color_black">
+      <img class="header__logo" src="./image/logo_blue.png" alt="Логотип">
+      <p>Спецкапиталстрой</p>
+    </a>
+    <div class="phone">
+      <img src="./image/icons/black_phone.svg" alt="phone">
+      <a class="phone-number color_blue" href="tel:8(029) 887-10-94">8(029) 887-10-94</a>
+    </div>
+  </div>
+  <input type="checkbox" id="burger-double">
+  <label for="burger-double" class="burger">
+    <span class="menu-burger menu-burger_black"></span>
+  </label>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__li scroll__navigation-li">
+        <a class="navigation__link color_black" href="./aboutUs.html">О нас</a>
+      </li>
+      <li class="navigation__li scroll__navigation-li">
+        <span class="navigation__link color_black">виды испытаний</span>
+        <a href="./typeTests.html" class="nav-wrapper"></a>
+        <ul class="navigation-sublist scroll__navigation-sublist">
+          <li class=""><a class="navigation-sublink" href="./impulse.html">Метод ударного импульса</a>
+          </li>
+          <li class=""><a class="navigation-sublink" href="./chip-off.html">Метод отрыва со скалыванием</a></li>
+          <li class=""><a class="navigation-sublink" href="./pullout.html">
+            Испытания усилия вырыва анкерного устройства и крепежного элемента
+          </a></li>
+          <li class="">
+            <a class="navigation-sublink" href="./compaction.html">Коэффициент уплотнения</a>
+          </li>
+        </ul>
+      </li>
+      <li class="navigation__li scroll__navigation-li">
+        <a class="navigation__link color_black" href="./instruments.html">Испытательные приборы</a>
+      </li>
+      <li class="scroll__navigation-li">
+        <a class="navigation__link color_black button_border button-contact" href="./contacts.html">Заказать звонок</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="main__error-block">
+  <img src="image/error.png" alt="not found">
+  <h1 class="title__error">ошибка 404</h1>
+  <p class="description__error">
+    Что-то пошло не так! Страница, которую вы запрашиваете, не существует. Возможно она устарела, была удалена, или был
+    введен неверный адрес в адресной строке.
+  </p>
+  <a href="./" class="button button-slider subpage-button-contact">на главную</a>
+</div>
 </body>
 </html>

@@ -30,7 +30,7 @@
   }
   
   .typeTests__header {
-    background-image: url(./image/typeTests_header_mob.png);
+    background-image: url("./image/typeTests_header_mob.png");
   }
   
   .instruments__header {
@@ -46,7 +46,7 @@
     top: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     bottom: -25px;
     justify-content: center;
   }
@@ -82,9 +82,7 @@
     color: var(--white);
     text-align: center;
   }
-  .button_border{
-    border: 1px solid var(--black);
-  }
+  
   .header__content {
     top: 132px;
     align-items: center;
@@ -692,4 +690,12 @@
     height: 420px;
   }
   
+  .title__error {
+    font-size: 45px;
+    padding-bottom: 30px;
+  }
+  
+  .description__error {
+    padding-bottom: 15px;
+  }
 }
